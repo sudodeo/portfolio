@@ -1,0 +1,12 @@
+#contact-sect{
+    /* background: url(../images/contact-bg.jpg) no-repeat center center; */
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+
+}
+
