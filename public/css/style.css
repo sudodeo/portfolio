@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +15,6 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background: url(../img/bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .container {
@@ -81,3 +79,36 @@ span.gradient-text {
     /* background-clip: ; */
     -webkit-text-fill-color: transparent;
 }
+
+/* Services section */
+#services-and-skills {
+    background: #0e0e2e;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#services-and-skills .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 100px 0;
+    /* text-align: center; */
+}
+
+#services-and-skills .service-item {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #1e1e3f;
+    margin: 10px 5%;
+}
+
+/* End of Services section */
