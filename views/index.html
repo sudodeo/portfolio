@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../public/images/favicon.png" type="image/x-icon">
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../public/css/lib/swiper-bundle.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Deolu's Portfolio</title>
+</head>
+<body>
+    <!-- Header. -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo"><span class="logo_prefix">sudo</span><span class="logo_suffix"><i>deo</i></span></a>
+
+            <div class="nav_menu" id="nav-menu">
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class="uil uil-estate nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#who_am_i" class="nav_link">
+                            <i class="uil uil-user nav_icon"></i> Who am I?
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link">
+                            <i class="uil uil-scenery nav_icon"></i> Portfolio
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav_btns">
+                <i class="uil-moon change-theme" id="theme-button"></i>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="main">   
+        <!-- Home -->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid"> 
+                    <div class="home_social">
+                        <a href="https://www.linkedin.com/in/adeoluwa-adesola-dev/" target="_blank" class="home_social-icon">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/deolu_ad" target="_blank" class="home_social-icon">
+                            <i class="uil uil-twitter"></i>
+                        </a>
+                        <a href="https://github.com/sudodeo" target="_blank" class="home_social-icon">
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="https://discordapp.com/741308876204408854" target="_blank" class="home_social-icon">
+                            <i class="uil uil-discord"></i>
+                        </a>
+                    </div>
+                    <div class="home_img">
+                        <img src="../public/images/home_image.png" class="home_blob">
+                    </div>
+                    <div class="home_data">
+                        <h1 class="home_title">Hi, I am Deolu</h1>
+                        <h3 class="home_subtitle">
+                            <!-- <span class="text first_text">A </span>
+                            <span class="text second_text">Native Android Developer</span> -->
+                            <div class="wrapper">
+                                <ul class="dynamic_texts">
+                                    <li><span>Backend Developer</span></li>
+                                    <li><span>Web scraping specialist</span></li>
+                                    <li><span>Web Automation Enthusiast</span></li>
+                                </ul>
+                            </div>
+                        </h3>
+                        <p class="home_description">
+                            High level of experience with Android and building Android apps with Kotlin.
+                        </p>
+                        <a href="#contact" class="button button-flex">
+                        Contact Me <i class="uil uil-message button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home_scroll">
+                    <a href="#who_am_i" class="home_scroll-button button-flex">
+                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                        <span class="home_scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home_scroll-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section" id="who_am_i">
+            <h2 class="section_title">Who am I?</h2>
+            <span class="section_subtitle">My Introduction</span>
+            <div class="about_container container grid">
+                <img src="../public/images/about_image.png" class="about_img">
+                <div class="about_data">
+                    <p class="about_description">
+                        A Brand Entity Designer, Website Developer and Android Application Developer whose objectives revolve around creating industry standard applications.
+                    </p>
+                    <div class="about_info">
+                        <div>
+                            <span class="about_info-title">03+</span>
+                            <span class="about_info-name">Years <br> experience</span>
+                        </div>
+                        <div>
+                            <span class="about_info-title">10+</span>
+                            <span class="about_info-name">Completed <br> projects</span>
+                        </div>
+                        <div>
+                            <span class="about_info-title">01+</span>
+                            <span class="about_info-name">Companies <br> worked</span>
+                        </div>
+                    </div>
+                    <div class="about_buttons">
+                        <a download="" href="#" class="button button-flex">
+                            Download CV <i class="uil uil-download-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">My technical level</span>
+            <div class="skills_container container grid">
+                <div>
+                    <!-- Backend Development -->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-android skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Backend Developer</h1>
+                                <span class="skills_subtitle">1 Year</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <!-- Kotlin -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">Node.js</h3>
+                                    <span class="skills_number">65%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_kotlin"></span>
+                                </div>
+                            </div>
+                            <!-- XML -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">PostgreSQL</h3>
+                                    <span class="skills_number">65%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_xml"></span>
+                                </div>
+                            </div>
+                            <!-- Room DB -->
+                            <!-- <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">Room DB</h3>
+                                    <span class="skills_number">67%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_room_db"></span>
+                                </div>
+                            </div> -->
+                            <!-- API Implementation -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">API Implementation</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_api"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> 
+                     <!-- Web scraping -->
+                     <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Web Scraping</h1>
+                                <span class="skills_subtitle">2 years</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <!-- HTML -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">Python</h3>
+                                    <span class="skills_number">85%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_html"></span>
+                                </div>
+                            </div>
+                            <!-- Golang -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">Golang</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_css"></span>
+                                </div>
+                            </div>
+                            <!-- JavaScript
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_number">57%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_javascript"></span>
+                                </div>
+                            </div> -->
+                            <!-- Bootstrap -->
+                            <!-- <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">Bootstrap</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_bootstrap"></span>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                     <!-- Web Automation -->
+                     <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-illustration skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Web Automation</h1>
+                                <span class="skills_subtitle">2 years</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <!-- Photoshop -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">Selenium</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_selenium"></span>
+                                </div>
+                            </div>
+                            <!-- Illustrator -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">Playwright</h3>
+                                    <span class="skills_number">55%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_playwright"></span>
+                                </div>
+                            </div>
+                            <!-- XD -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">Python requests</h3>
+                                    <span class="skills_number">78%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_requests"></span>
+                                </div>
+                            </div>
+                            <!-- Figma -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skills_name">Golang</h3>
+                                    <span class="skills_number">65%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_go"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">Recent projects</span>
+            <div class="portfolio_container container swiper">
+                <div class="swiper-wrapper">
+                    <!-- First Project -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="../public/images/illustration_man_working.png" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Weather App</h3>
+                            <p class="portfolio_description">An app that displays the current weather from data received
+                                from an API.
+                            </p>
+                            <a href="#" class="button button-flex buttton-small portfolio_button">
+                               Link to project 
+                               <i class="uil uil-arrow-right button_icon"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Second Project -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="../public/images/illustration_man_working.png" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Junk Foods Order App</h3>
+                            <p class="portfolio_description">An app that displays a list of junk foods and shows details when
+                                clicked on.
+                            </p>
+                            <a href="#" class="button button-flex buttton-small portfolio_button">
+                               Link to project 
+                               <i class="uil uil-arrow-right button_icon"></i> 
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Third Project -->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="../public/images/illustration_man_working.png" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Password Generator App</h3>
+                            <p class="portfolio_description">An app that generates a 8 - 12 characters long password, which is
+                                a combination of alphabets, digits and special characters.
+                            </p>
+                            <a href="#" class="button button-flex buttton-small portfolio_button">
+                               Link to project 
+                               <i class="uil uil-arrow-right button_icon"></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+    <a href="#main" class="scroll_up" id="scroll-up">
+        <i class="uil uil-arrow-up scroll_up-icon"></i>
+    </a>
+    
+    <!-- Swiper JS -->
+    <script src="../public/js/lib/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="../public/js/main.min.js"></script>
+</body>
+</html>
