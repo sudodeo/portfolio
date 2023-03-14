@@ -8,6 +8,7 @@
   --purple-primary: #0b0852;
   --purple-secondary: #06063f;
   --purple-tertiary: #5561ea;
+  --purple-transparent: #5561ea25;
   --orange-primary: #f33f5a;
   --gold-primary: #f9a239;
   --white: #fff;
@@ -28,34 +29,83 @@ html {
 body {
   color: var(--white);
   font-family: "Poppins", sans-serif;
-  @apply text-xs md:text-sm xl:text-base;
+  position: relative;
+  /* stop horizontal scroll */
+  overflow-x: hidden;
+  @apply text-sm xl:text-base;
 }
 
 .universal {
-  @apply px-12 lg:px-32 xl:px-56;
+  @apply px-6 md:px-12 lg:px-32 xl:px-56;
+}
+
+.second_bg {
+  background-color: var(--purple-secondary);
 }
 
 .main_btn {
-  @apply font-medium py-2 px-4 rounded outline outline-1 outline-[var(--orange-primary)] bg-[var(--purple-primary)] hover:bg-[var(--purple-tertiary)] hover:shadow-lg transition duration-300 ease-in-out;
+  @apply font-medium py-2 px-4 outline outline-1 outline-[var(--orange-primary)] bg-[var(--purple-primary)] hover:bg-[var(--purple-transparent)] focus:bg-[var(--purple-transparent)] transition duration-300 ease-in-out;
 }
 
-nav ul li:hover {
+nav ul li a:hover,
+nav ul li a:focus {
   color: var(--orange-primary);
   cursor: pointer;
 }
-
-/* header {
-  height: 70vh;
-  background-color: #5561ea;
-} */
 
 .name {
   color: var(--orange-primary);
 }
 
-.name span {
+.name mark {
   background-color: var(--orange-primary);
   color: var(--white);
   margin: 0 2px;
   padding: 0 1px;
+}
+
+.circle {
+  filter: blur(150px);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  right: 23%;
+  bottom: -15%;
+  z-index: -2;
+  @apply lg:scale-[1.5] xl:scale-[2.5];
+}
+
+.deolu {
+  width: 100%;
+  min-width: 450px;
+  z-index: 10;
+  align-self: self-end;
+  bottom: 0%;
+  right: 15%;
+  z-index: -1;
+  @apply hidden lg:block;
+}
+
+.experience {
+  position: absolute;
+  /* gradient red to gold */
+  background: linear-gradient(
+    90deg,
+    hsla(351, 88%, 60%, 0.9) 0%,
+    hsla(33, 94%, 60%, 0.9) 100%
+  );
+  right: 20%;
+  bottom: -5%;
+  @apply w-[180px] md:w-[200px];
+}
+
+.logo {
+  transition: 0.3s;
+}
+
+.logo:focus,
+.logo:hover {
+  /* increse contrast */
+  filter: brightness(1.5);
 }

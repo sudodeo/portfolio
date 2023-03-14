@@ -4,12 +4,13 @@ import Header from "../components/Header";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import About from "../components/About";
 
 export default function Home() {
   //useEffect
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 1000,
       once: true,
     });
   }, []);
@@ -25,6 +26,7 @@ export default function Home() {
 
       <NavBar />
       <Header />
+      <About />
       <main></main>
     </>
   );
