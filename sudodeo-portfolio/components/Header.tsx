@@ -1,9 +1,10 @@
 import React from "react";
 import Socials from "./Socials";
+import db from "../db";
 
 const Header = () => {
   return (
-    <header className="universal relative flex">
+    <header className="universal_x relative flex">
       <div className="pt-24 pb-48 self-center flex-1" data-aos="fade-in">
         <h1 className="text-4xl sm:text-6xl xl:text-7xl font-bold md:whitespace-nowrap">
           I'm{" "}
@@ -26,14 +27,14 @@ const Header = () => {
       <img
         src="./deo.png"
         alt="Adeoluwa"
-        className="deolu flex-1"
+        className="portrait flex-1"
         data-aos="fade-up"
       />
 
       {/* experience box */}
       <div className="experience p-3 right-3" data-aos="fade-left">
-        <div className="border-[2px] border-dashed p-3 flex gap-2">
-          <span className="font-bold text-5xl">2</span>{" "}
+        <div className="border-[3px] border-dashed p-3 flex gap-2">
+          <span className="font-bold text-5xl">{db?.yearsOfExperience}</span>{" "}
           <span>Years of Experience</span>
         </div>
       </div>

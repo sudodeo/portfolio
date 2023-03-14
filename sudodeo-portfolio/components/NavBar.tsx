@@ -3,16 +3,16 @@ import React from "react";
 const NavBar = () => {
   return (
     <nav
-      className="flex justify-between items-center py-10 universal"
+      className="flex justify-between items-center py-10 universal_x"
       data-aos="fade-in"
     >
-      <button className="logo">
+      <a>
         <img
           src="./logo.png"
           alt="logo"
           className="w-32 md:w-40 xl:w-48 cursor-pointer select-none"
         />
-      </button>
+      </a>
 
       <ul className="font-medium hidden lg:flex gap-8 xl:gap-8">
         <li>

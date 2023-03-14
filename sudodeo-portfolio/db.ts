@@ -9,8 +9,8 @@ interface DB {
     linkedIn: string;
     discord: string;
   };
-  // list of testimonials
   testimonials: object[];
+  yearsOfExperience: number;
 }
 
 const db: DB = {
@@ -34,6 +34,7 @@ const db: DB = {
       comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
   ],
+  yearsOfExperience: 2,
 };
 
 export default db;

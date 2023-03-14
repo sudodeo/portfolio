@@ -26,8 +26,9 @@ export default function Home() {
 
       <NavBar />
       <Header />
-      <About />
-      <main></main>
+      <main>
+        <About />
+      </main>
     </>
   );
 }

@@ -3,7 +3,7 @@ import db from "../db";
 
 const Socials = () => {
   return (
-    <div className="flex gap-4 mt-10">
+    <div className="socials flex gap-4 mt-10">
       {/* discord */}
       <a href={db?.socials?.discord} target="_blank" rel="noreferrer">
         <img

@@ -2,7 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="second_bg universal">
+    <div className="second_bg universal_x universal_y">
+      <h2 className="title">About me</h2>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
       reprehenderit blanditiis molestiae nobis beatae tempore cumque perferendis
       sapiente odit, reiciendis tenetur corporis eveniet incidunt harum officiis
