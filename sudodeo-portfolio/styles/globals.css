@@ -1,18 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --purple-primary: #0b0852;
-  --purple-secondary: #06063f;
-  --purple-tertiary: #5561ea;
-  --purple-transparent: #5561ea25;
-  --orange-primary: #f33f5a;
-  --gold-primary: #f9a239;
-  --white: #fff;
-  --gray: #f5f5f5;
+  --purple-primary: #0c0b47;
+  --purple-secondary: #070640;
+  --purple-tertiary: hsl(235, 78%, 63%);
+  --purple-transparent: hsla(235, 78%, 63%, 0.145);
+  --orange-primary: hsl(351, 88%, 60%);
+  --gold-primary: hsl(33, 94%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --gray: hsla(0, 0%, 100%, 0.5);
 }
 
 * {
@@ -28,11 +26,18 @@ html {
 
 body {
   color: var(--white);
-  font-family: "Poppins", sans-serif;
   position: relative;
-  /* stop horizontal scroll */
-  overflow-x: hidden;
-  @apply text-sm xl:text-base;
+  @apply text-sm xl:text-base scroll-pt-44;
+}
+
+[data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
 }
 
 .universal_x {
@@ -44,7 +49,7 @@ body {
 }
 
 .title {
-  @apply text-3xl xl:text-5xl font-bold capitalize mb-10;
+  @apply text-2xl sm:text-3xl xl:text-5xl font-bold capitalize mb-10;
 }
 
 .second_bg {
@@ -55,8 +60,22 @@ body {
   @apply font-medium py-2 px-4 outline outline-1 outline-[var(--orange-primary)] bg-[var(--purple-primary)] hover:bg-[var(--purple-transparent)] focus:bg-[var(--purple-transparent)] transition duration-300 ease-in-out;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+nav.nav_transparent {
+  background-color: transparent;
+}
+
+nav.nav_visible {
+  background-color: var(--purple-primary);
+}
+
+nav ul li a:hover {
   color: var(--orange-primary);
   cursor: pointer;
 }
@@ -65,12 +84,12 @@ nav ul li a:focus {
   color: var(--orange-primary);
 }
 
-.name mark {
+/* .name mark {
   background-color: var(--orange-primary);
   color: var(--white);
   margin: 0 2px;
   padding: 0 1px;
-}
+} */
 
 .circle {
   filter: blur(150px);
@@ -92,7 +111,7 @@ nav ul li a:focus {
   bottom: 0%;
   right: 15%;
   z-index: -1;
-  @apply hidden lg:block;
+  @apply hidden md:block;
 }
 
 .experience {
@@ -114,4 +133,38 @@ a img {
 a img:focus,
 a img:hover {
   filter: brightness(1.5);
+}
+
+.tabs {
+  scrollbar-width: none;
+  scroll-padding: 0 1rem;
+  /* hide scrollbar */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+/* FireFox */
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs .indicator {
+  transition: 0.3s;
+}
+
+.tabs button {
+  color: var(--gray);
+}
+
+.tabs button:hover {
+  color: var(--white);
+}
+
+.tabs button.active {
+  color: var(--white);
+}
+
+.about_tab {
+  grid-template-columns: 1.5fr 1fr;
 }
