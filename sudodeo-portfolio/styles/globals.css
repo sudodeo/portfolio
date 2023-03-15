@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,11 +8,13 @@
   --purple-primary: #0c0b47;
   --purple-secondary: #070640;
   --purple-tertiary: hsl(235, 78%, 63%);
-  --purple-transparent: hsla(235, 78%, 63%, 0.145);
+  --purple-quaternary: #0c0b44;
+  --purple-transparent: hsla(235, 78%, 63%, 0.185);
   --orange-primary: hsl(351, 88%, 60%);
   --gold-primary: hsl(33, 94%, 60%);
   --white: hsl(0, 0%, 100%);
-  --gray: hsla(0, 0%, 100%, 0.5);
+  --gray-primary: hsla(0, 0%, 100%, 0.5);
+  --gray-secondary: #464646;
 }
 
 * {
@@ -66,7 +70,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .universal_y {
-  @apply py-40;
+  @apply py-12 md:py-20 lg:py-40;
 }
 
 .title {
@@ -78,7 +82,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .main_btn {
-  @apply font-medium py-2 px-4 outline outline-1 outline-[var(--orange-primary)] bg-[var(--purple-primary)] hover:bg-[var(--purple-transparent)] focus:bg-[var(--purple-transparent)] transition duration-300 ease-in-out;
+  @apply !font-medium !capitalize !py-2 !px-4 !outline !outline-1 !outline-[var(--orange-primary)] !bg-transparent hover:!bg-[var(--purple-transparent)] !text-white !transition !duration-300 !ease-in-out;
+  font-family: "Poppins", sans-serif !important;
 }
 
 nav {
@@ -104,13 +109,6 @@ nav ul li a:hover {
 .name {
   color: var(--orange-primary);
 }
-
-/* .name mark {
-  background-color: var(--orange-primary);
-  color: var(--white);
-  margin: 0 2px;
-  padding: 0 1px;
-} */
 
 .circle {
   filter: blur(150px);
@@ -175,7 +173,7 @@ a img:hover {
 }
 
 .tabs button {
-  color: var(--gray);
+  color: var(--gray-primary);
 }
 
 .tabs button:hover {
@@ -188,4 +186,36 @@ a img:hover {
 
 .about_tab {
   grid-template-columns: 1.5fr 1fr;
+}
+
+input,
+textarea {
+  @apply block w-full border-b border-[var(--gray-secondary)] pb-5 mt-2 bg-transparent !outline-none focus:border-b-white placeholder:text-[var(--gray-primary)] placeholder:capitalize  resize-none;
+}
+
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+  @apply border-b-white;
+}
+
+.count_info {
+  @apply gap-3 md:gap-5 lg:gap-10 flex flex-col md:flex-row lg:flex-col w-full;
+}
+
+.count_info li {
+  @apply bg-[var(--purple-quaternary)] border border-[var(--gray-secondary)] p-5 w-full;
+}
+
+.count_info li h3 {
+  @apply text-base lg:text-xl mb-5;
+}
+
+.count_info li > div {
+  @apply flex items-center gap-2 lg:gap-5 text-[var(--gray-primary)];
+}
+
+.count_info li > div > div {
+  color: var(--orange-primary);
+  @apply bg-white w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center rounded-full;
+  flex-shrink: 0;
 }

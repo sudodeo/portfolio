@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Button from "@mui/material/Button";
 
 const NavBar = () => {
   // show and hide navbar on scroll up and scroll down respectively
@@ -29,14 +30,15 @@ const NavBar = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [prevScrollPos, visible, handleScroll]);
 
-  function scrollToSection(id: string) {
+  function scrollToSection(e: any, id: string) {
+    e.preventDefault();
     const section = document.getElementById(id);
     section?.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
     <nav
-      className={`flex justify-between items-center py-10 universal_x z-50 ${
+      className={`flex justify-between items-center py-5 lg:py-10 universal_x z-50 ${
         visible === undefined ? "nav_transparent" : visible && "nav_visible"
       }`}
       data-aos="fade-in"
@@ -59,10 +61,7 @@ const NavBar = () => {
 
       <ul className="font-medium hidden md:flex gap-5 lg:gap-8 xl:gap-8">
         <li>
-          <a
-            href="javascript:void(0);"
-            onClick={() => scrollToSection("about")}
-          >
+          <a href="" onClick={(e) => scrollToSection(e, "about")}>
             About
           </a>
         </li>
@@ -73,16 +72,20 @@ const NavBar = () => {
           <a href=""> Testimonials</a>
         </li>
         <li>
-          <a
-            href="javascript:void(0);"
-            onClick={() => scrollToSection("contact")}
-          >
+          <a href="" onClick={(e) => scrollToSection(e, "contact")}>
             Contact
           </a>
         </li>
       </ul>
 
-      <button className="hidden md:block main_btn">Let's Talk</button>
+      <div className="hidden md:block">
+        <Button
+          className="main_btn"
+          onClick={(e) => scrollToSection(e, "contact")}
+        >
+          Let's Talk
+        </Button>
+      </div>
     </nav>
   );
 };

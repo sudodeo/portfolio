@@ -3,17 +3,24 @@ import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import LoadingScreen from "../components/LoadingScreen";
 
 export default function Home() {
-  //useEffect
+  // display loader for 5 seconds
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     AOS.init({
       duration: 300,
       once: true,
     });
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
   }, []);
 
   return (
@@ -43,13 +50,19 @@ export default function Home() {
         <link rel="icon" href="favicons/sudo-favicon.ico" />
       </Head>
 
-      <NavBar />
-      <Header />
+      {loading ? (
+        <LoadingScreen />
+      ) : (
+        <>
+          <NavBar />
+          <Header />
 
-      <div className="w-full overflow-hidden">
-        <About />
-        <Contact />
-      </div>
+          <div className="w-full overflow-hidden">
+            <About />
+            <Contact />
+          </div>
+        </>
+      )}
     </>
   );
 }

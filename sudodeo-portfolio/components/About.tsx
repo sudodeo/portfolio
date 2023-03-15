@@ -33,7 +33,7 @@ const About = () => {
 
   return (
     <section className="second_bg universal_x universal_y">
-      <h2 className="title pt-12" id="about">
+      <h2 className="title pt-32 lg:pt-12" id="about">
         About me
       </h2>
 

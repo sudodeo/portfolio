@@ -1,0 +1,78 @@
+/* fade in up animation */
+.portrait {
+  animation: fadeInUp 1s ease-out;
+  animation-fill-mode: backwards;
+}
+
+.loader {
+  translate: 0 -20px;
+  animation: fadeOut 1.3s ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+.loader img {
+  width: 4.5rem;
+  transition: transform 1s ease-in-out, border-radius 1s linear;
+  animation: roll 1s linear;
+  translate: -20%;
+  filter: brightness(0) invert(1);
+}
+
+.loader h1 {
+  animation: fadeInLeft 1s ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* rolling box from one side of screen to another */
+@keyframes roll {
+  0% {
+    translate: 100% 0;
+    rotate: -0deg;
+  }
+  30% {
+    rotate: -90deg;
+  }
+  100% {
+    translate: -20% 0;
+    rotate: -360deg;
+  }
+}
+
+/* fade in left */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* fade out */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

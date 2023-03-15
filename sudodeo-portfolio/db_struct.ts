@@ -6,6 +6,9 @@ type Testimonial = {
 
 export default interface DB {
   name: string;
+  phone: string;
+  email: string;
+  address: string;
   about: string[];
   socials: {
     instagram: string;

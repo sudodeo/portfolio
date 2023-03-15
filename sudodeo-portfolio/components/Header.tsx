@@ -1,12 +1,13 @@
 import React from "react";
 import Socials from "./Socials";
 import db from "../db";
+import styles from "../styles/Animations.module.css";
 
 const Header = () => {
   return (
     <header className="universal_x pt-44 relative flex ">
       <div
-        className="pt-24 pb-48 self-center flex-1"
+        className="pt-12 md:pt-24 pb-48 self-center flex-1"
         data-aos="fade-in"
         data-aos-duration="1000"
       >
@@ -27,9 +28,7 @@ const Header = () => {
       <img
         src="./deo.png"
         alt="Adeoluwa"
-        className="portrait flex-1"
-        data-aos="fade-up"
-        data-aos-duration="1000"
+        className={`portrait flex-1 ${styles.portrait}`}
         loading="eager"
       />
 
