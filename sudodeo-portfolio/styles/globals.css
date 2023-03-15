@@ -30,6 +30,27 @@ body {
   @apply text-sm xl:text-base scroll-pt-44;
 }
 
+/* style scrollbar */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  /* for firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--orange-primary) var(--purple-primary);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--purple-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--orange-primary);
+  border-radius: 1rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gold-primary);
+}
+
 [data-aos] {
   pointer-events: none;
 }
