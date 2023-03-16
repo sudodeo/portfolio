@@ -71,7 +71,7 @@ const Contact = () => {
         </ul>
 
         <form
-          className="bg-[var(--purple-quaternary)] border border-[var(--gray-secondary)] px-5 md:px-10 py-8 md:py-16"
+          className="bg-[var(--purple-quaternary)] border border-[var(--gray-secondary)] px-5 md:px-10 py-8 md:py-16 rounded-lg"
           data-aos="fade-right"
           onSubmit={handleSubmit}
         >
