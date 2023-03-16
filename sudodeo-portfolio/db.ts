@@ -4,7 +4,7 @@ import DB from "./db_struct";
 //👋 Hi Dee, make changes to the db here
 const db: DB = {
   name: "Sudodeo",
-  phone: "2348130000000", // 13 characters, spaces are allowed
+  phone: "+2348130000000", // 13 characters after +, spaces are allowed
   email: "sudodeo@gmail.com",
   address: "Lagos, Nigeria",
   about: [
