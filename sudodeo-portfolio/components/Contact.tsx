@@ -71,7 +71,7 @@ const Contact = () => {
         </ul>
 
         <form
-          className="bg-[var(--purple-quaternary)] border border-[var(--gray-secondary)] px-5 md:px-10 py-8 md:py-16 rounded-lg"
+          className="bg-[var(--purple-quaternary)] border border-[var(--gray-secondary)] px-5 md:px-10 py-8 md:py-16"
           data-aos="fade-right"
           onSubmit={handleSubmit}
         >
@@ -123,6 +123,7 @@ const Contact = () => {
               cols={30}
               rows={5}
               placeholder="Your message"
+              required
             ></textarea>
           </div>
 
