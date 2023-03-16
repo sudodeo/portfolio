@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --purple-primary: #0c0b47;
+  --purple-secondary: #070640;
+  --purple-tertiary: hsl(235, 78%, 63%);
+  --purple-quaternary: #0c0b44;
+  --purple-transparent: hsla(235, 78%, 63%, 0.185);
+  --orange-primary: hsl(351, 88%, 60%);
+  --gold-primary: hsl(33, 94%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --gray-primary: hsla(0, 0%, 100%, 0.5);
+  --gray-secondary: #464646;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline-color: transparent;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--purple-primary);
+}
+
+body {
+  color: var(--white);
+  position: relative;
+  @apply text-sm xl:text-base scroll-pt-44;
+}
+
+/* style scrollbar */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  /* for firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--orange-primary) var(--purple-primary);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--purple-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--orange-primary);
+  border-radius: 1rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gold-primary);
+}
+
+[data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
+}
+
+.universal_x {
+  @apply px-6 md:px-12 lg:px-32 xl:px-56;
+}
+
+.universal_y {
+  @apply py-12 md:py-20 lg:py-40;
+}
+
+.title {
+  @apply text-2xl sm:text-3xl xl:text-5xl font-bold capitalize mb-10;
+}
+
+.second_bg {
+  background-color: var(--purple-secondary);
+}
+
+.main_btn {
+  @apply !font-medium !capitalize !py-2 !px-4 !outline !outline-1 !outline-[var(--orange-primary)] !bg-transparent hover:!bg-[var(--purple-transparent)] !text-white !transition !duration-300 !ease-in-out;
+  font-family: "Poppins", sans-serif !important;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+nav.nav_transparent {
+  background-color: transparent;
+}
+
+nav.nav_visible {
+  background-color: var(--purple-primary);
+}
+
+nav ul li a:hover {
+  color: var(--orange-primary);
+  cursor: pointer;
+}
+
+.name {
+  color: var(--orange-primary);
+}
+
+.circle {
+  filter: blur(150px);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  right: 23%;
+  bottom: -15%;
+  z-index: -2;
+  @apply lg:scale-[1.5] xl:scale-[2.5];
+}
+
+.portrait {
+  width: 100%;
+  min-width: 450px;
+  z-index: 10;
+  align-self: self-end;
+  bottom: 0%;
+  right: 15%;
+  z-index: -1;
+  @apply hidden md:block;
+}
+
+.experience {
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    hsla(351, 88%, 60%, 0.9) 0%,
+    hsla(33, 94%, 60%, 0.9) 100%
+  );
+  right: 20%;
+  bottom: -5%;
+  @apply w-[180px] md:w-[200px];
+}
+
+a img {
+  transition: 0.3s;
+}
+
+a img:focus,
+a img:hover {
+  filter: brightness(1.5);
+}
+
+.tabs {
+  scrollbar-width: none;
+  scroll-padding: 0 1rem;
+  /* hide scrollbar */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+/* FireFox */
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs .indicator {
+  transition: 0.3s;
+}
+
+.tabs button {
+  color: var(--gray-primary);
+}
+
+.tabs button:hover {
+  color: var(--white);
+}
+
+.tabs button.active {
+  color: var(--white);
+}
+
+.about_tab {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+input,
+textarea {
+  @apply block w-full border-b border-[var(--gray-secondary)] pb-5 mt-2 bg-transparent !outline-none focus:border-b-white placeholder:text-[var(--gray-primary)] placeholder:capitalize  resize-none;
+}
+
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+  @apply border-b-white;
+}
+
+.count_info {
+  @apply gap-3 md:gap-5 lg:gap-10 flex flex-col md:flex-row lg:flex-col w-full;
+}
+
+.count_info li {
+  @apply bg-[var(--purple-quaternary)] border border-[var(--gray-secondary)] p-5 w-full;
+}
+
+.count_info li h3 {
+  @apply text-base lg:text-xl mb-5;
+}
+
+.count_info li > div {
+  @apply flex items-center gap-2 lg:gap-5 text-[var(--gray-primary)];
+}
+
+.count_info li > div > div {
+  color: var(--orange-primary);
+  @apply bg-white w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center rounded-full;
+  flex-shrink: 0;
+}
