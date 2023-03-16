@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import LoadingScreen from "../components/LoadingScreen";
+import Projects from "../components/Projects";
 
 export default function Home() {
   // display loader for 5 seconds
@@ -59,6 +60,7 @@ export default function Home() {
 
           <div className="w-full overflow-hidden">
             <About />
+            <Projects />
             <Contact />
           </div>
         </>
