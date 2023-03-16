@@ -15,8 +15,8 @@ export default function Home() {
 
   useEffect(() => {
     AOS.init({
-      duration: 300,
-      once: true,
+      duration: 500,
+      // once: true,
     });
 
     setTimeout(() => {
