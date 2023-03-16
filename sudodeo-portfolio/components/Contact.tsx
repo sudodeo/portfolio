@@ -24,7 +24,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="universal_x universal_y second_bg" id="contact">
+    <section className="universal_x universal_y second_bg" id="contact">
       <h2 className="text-center title">Let's talk</h2>
 
       <div className="mt-20 grid lg:grid-cols-2 gap-10">
@@ -134,7 +134,7 @@ const Contact = () => {
           </center>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 
