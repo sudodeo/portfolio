@@ -219,3 +219,41 @@ textarea:not(:placeholder-shown) {
   @apply bg-white w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center rounded-full;
   flex-shrink: 0;
 }
+
+.project_card {
+  display: grid;
+  grid-template-areas: "stack";
+  align-items: end;
+}
+
+.project_card > * {
+  grid-area: stack;
+}
+
+.gradient_div {
+  /* background: linear-gradient(
+    180deg,
+    transparent 70%,
+    rgba(0, 0, 0, 0.445) 100%
+  ); */
+}
+
+.projects > div:nth-child(1) > article:nth-child(2),
+.projects > div:nth-child(1) > article:nth-child(2) > .bg_color {
+  background-color: #0092ce;
+}
+
+.projects > div:nth-child(1) > article:nth-child(3),
+.projects > div:nth-child(1) > article:nth-child(3) > .bg_color {
+  background-color: #2a34ba;
+}
+
+.projects > div:nth-child(2) > article:nth-child(1),
+.projects > div:nth-child(2) > article:nth-child(1) > .bg_color {
+  background-color: #00717b;
+}
+
+.projects > div:nth-child(2) > article:nth-child(2),
+.projects > div:nth-child(2) > article:nth-child(2) > .bg_color {
+  background-color: #e75b17;
+}
