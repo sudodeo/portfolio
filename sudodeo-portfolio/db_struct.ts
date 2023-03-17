@@ -4,6 +4,12 @@ type Testimonial = {
   comment: string;
 };
 
+type Project = {
+  title: string;
+  description?: string;
+  image?: string;
+};
+
 export default interface DB {
   name: string;
   phone: string;
@@ -18,4 +24,8 @@ export default interface DB {
   };
   testimonials: Testimonial[];
   yearsOfExperience: number;
+  projects: {
+    first_column: Project[];
+    second_column: Project[];
+  };
 }

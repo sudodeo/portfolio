@@ -31,6 +31,33 @@ const db: DB = {
     },
   ],
   yearsOfExperience: 3,
+  projects: {
+    first_column: [
+      {
+        title: "social media API",
+        description: "A basic social media API built with FastAPI",
+        image: "./social.jpg",
+      },
+      {
+        title: "gizmo",
+        description: "friendly discord bot",
+        image: "./gizmo.jpg",
+      },
+    ],
+    second_column: [
+      {
+        title: "storeX",
+        description: "Robust e-commerce Api",
+        image: "./storex.jpg",
+      },
+      {
+        title: "tech news API",
+        description:
+          "A scraper that gets trending tech content from different news sites and serves them via an API",
+        image: "./technews.jpg",
+      },
+    ],
+  },
 };
 
 export default db;

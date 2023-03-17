@@ -17,8 +17,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   >
     <div className="bg_color w-full h-full absolute top-0 left-0 mix-blend-hard-light"></div>
 
-    <div className="gradient_div z-10 w-full h-full absolute top-0 left-0"></div>
-
     <img
       src={image}
       alt=""
@@ -27,10 +25,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     />
 
     <div className="z-20 m-5 md:m-10">
-      <h3 className="text-xl md:text-3xl font-bold first-letter:uppercase drop-shadow-lg">
+      <h3 className="text-xl md:text-3xl font-bold first-letter:uppercase drop-shadow-md">
         {title}
       </h3>
-      <p className="drop-shadow-lg">{description}</p>
+      <p className="drop-shadow-lg first-letter:uppercase">{description}</p>
     </div>
   </article>
 );
