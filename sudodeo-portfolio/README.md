@@ -18,7 +18,7 @@ Features
 
 # How to Use
 
-To view the site, simply go to sudodeo.dev. To run the site locally, clone the repository to your computer and run the following command in the project directory.
+To view the site, simply go to [sudodeo.dev](https://sudodeo.dev). To run the site locally, clone the repository to your computer and run the following command in the project directory.
 
 ```bash
 npm run dev
@@ -30,4 +30,4 @@ yarn dev
 
 A brilliant Frontend Developer - Michael Israel
 
-["mikelisrael"](https://github.com/mikelisrael) 👈 Check out Michael on github
+[mikelisrael](https://github.com/mikelisrael) 👈 Check out Michael on github
