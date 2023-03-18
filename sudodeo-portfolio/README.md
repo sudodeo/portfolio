@@ -4,17 +4,17 @@ This is the repository for my personal portfolio site, "Sudodeo". This site show
 
 Features
 
-    Home page with a brief introduction and links to my social media profiles
-    About page with my skills, experience, and services
-    Projects page with links to my projects and descriptions
-    Contact page with a form to send me a message
+- Home page with a brief introduction and links to my social media profiles
+- About page with my skills, experience, and services
+- Projects page with links to my projects and descriptions
+- Contact page with a form to send me a message
 
-# Technologies Used
+## Technologies Used
 
-    Next js
-    typescript
-    JavaScript
-    css
+- Next js
+- typescript
+- JavaScript
+- css
 
 # How to Use
 
