@@ -1,22 +1,52 @@
 import React from "react";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
+import styles from "../styles/Skills.module.css";
+import db from "../db";
+import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
+import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
+import PrecisionManufacturingOutlinedIcon from "@mui/icons-material/PrecisionManufacturingOutlined";
 
 const SkillTab = () => {
   return (
-    <div className="skill_tab pt-10" data-aos="zoom-out">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores saepe
-      fuga accusamus ex quam ut adipisci molestias magni harum fugit earum, sunt
-      odio amet consectetur illo tenetur reiciendis at error. Lorem ipsum dolor
-      sit amet consectetur adipisicing elit. Unde odio ea aliquid sint
-      laboriosam officia consectetur. Quibusdam repudiandae, quidem obcaecati
-      cum molestiae officia ratione quod nostrum voluptatibus aut neque
-      accusantium maxime dolore amet minima vitae nisi in voluptatem? Fugit
-      alias facere distinctio voluptatibus sed praesentium magnam aperiam quasi
-      quos aspernatur exercitationem neque corrupti, deserunt quaerat culpa
-      corporis dicta eum totam expedita officiis illo? Sequi dolore atque maxime
-      animi laboriosam officiis ad velit rem, voluptatum temporibus aliquam
-      neque magni exercitationem voluptate asperiores! Ab ipsum doloribus
-      consectetur cumque provident, magni quae in minima libero repudiandae,
-      officiis vel sit nulla inventore id dolorem?
+    <div
+      className={`flex items-stretch justify-center flex-wrap gap-[60px] pt-20 ${styles.skill_tab}`}
+      data-aos="zoom-out"
+    >
+      <article className={styles.box}>
+        <div className={styles.content}>
+          <div className={styles.skill_icon}>
+            <CodeOutlinedIcon fontSize="large" />
+          </div>
+          <div className={styles.skill_text}>
+            <h3>{db.skills[0].title}</h3>
+            <p>{db.skills[0].description}</p>
+          </div>
+        </div>
+      </article>
+
+      <article className={styles.box}>
+        <div className={styles.content}>
+          <div className={styles.skill_icon}>
+            <SmartToyOutlinedIcon fontSize="large" />
+          </div>
+          <div className={styles.skill_text}>
+            <h3>{db.skills[1].title}</h3>
+            <p>{db.skills[1].description}</p>
+          </div>
+        </div>
+      </article>
+
+      <article className={styles.box}>
+        <div className={styles.content}>
+          <div className={styles.skill_icon}>
+            <PrecisionManufacturingOutlinedIcon fontSize="large" />
+          </div>
+          <div className={styles.skill_text}>
+            <h3>{db.skills[2].title}</h3>
+            <p>{db.skills[2].description}</p>
+          </div>
+        </div>
+      </article>
     </div>
   );
 };

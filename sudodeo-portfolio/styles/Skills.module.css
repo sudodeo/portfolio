@@ -1,0 +1,124 @@
+.skill_tab .box {
+  position: relative;
+  flex: 1;
+  min-height: 300px;
+  @apply flex items-center justify-start p-3;
+  isolation: isolate;
+}
+
+@media (max-width: 1140px) {
+  .skill_tab .box {
+    flex: 0 0 300px;
+  }
+}
+
+.skill_tab .box:nth-child(1) {
+  --clr: #00b4d7;
+  border: 1px solid var(--clr);
+}
+
+.skill_tab .box:nth-child(2) {
+  --clr: var(--purple-tertiary);
+  border: 1px solid var(--clr);
+}
+
+.skill_tab .box:nth-child(3) {
+  --clr: #e75b17;
+  border: 1px solid var(--clr);
+}
+
+.skill_tab .box::before {
+  content: "";
+  position: absolute;
+  inset: -10px 50px;
+  border-top: 4px solid var(--clr);
+  border-bottom: 4px solid var(--clr);
+  z-index: -1;
+  transform: skewY(15deg);
+  transition: 0.5s ease-in-out;
+}
+
+/* .skill_tab .box:hover::before {
+  transform: skewY(0deg);
+  inset: -10px 40px;
+} */
+
+.skill_tab .box::after {
+  content: "";
+  position: absolute;
+  inset: 60px -10px;
+  border-left: 4px solid var(--clr);
+  border-right: 4px solid var(--clr);
+  z-index: -1;
+  transform: skew(15deg);
+  transition: 0.5s ease-in-out;
+}
+
+.skill_tab .box:hover::after {
+  transform: skew(0deg);
+  inset: 40px -10px;
+}
+
+.skill_tab .box .content {
+  @apply relative flex flex-col items-center justify-center gap-5 text-center py-5 px-2 w-full h-full overflow-hidden;
+}
+
+.skill_tab .box .content .skill_icon {
+  color: var(--clr);
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 0 0 4px var(--gray-secondary), 0 0 0 6px var(--clr);
+  transition: 0.5s ease-in-out;
+  @apply flex items-center justify-center;
+}
+
+.skill_tab .box:hover .content .skill_icon {
+  background-color: var(--clr);
+  color: white;
+  box-shadow: 0 0 0 4px white, 0 0 0 300px var(--clr);
+}
+
+.skill_tab .box .content .skill_text h3 {
+  @apply text-lg md:text-xl font-semibold capitalize;
+}
+
+.skill_tab .box .content .skill_text p {
+  @apply font-light mt-3;
+}
+
+@media all and (hover: hover) {
+  .skill_tab .box:hover::before {
+    transform: skewY(0deg);
+    inset: -10px 40px;
+  }
+
+  .skill_tab .box:hover::after {
+    transform: skew(0deg);
+    inset: 40px -10px;
+  }
+
+  .skill_tab .box:hover .content .skill_icon {
+    background-color: var(--clr);
+    color: white;
+    box-shadow: 0 0 0 4px white, 0 0 0 300px var(--clr);
+  }
+}
+
+/* if media is not hover, leave at static */
+@media not all and (hover: hover) {
+  .skill_tab .box::before {
+    transform: skewY(0deg);
+    inset: -10px 40px;
+  }
+
+  .skill_tab .box::after {
+    transform: skew(0deg);
+    inset: 40px -10px;
+  }
+
+  .skill_tab .box .content .skill_icon {
+    background-color: var(--clr);
+    color: white;
+    box-shadow: 0 0 0 4px white, 0 0 0 300px var(--clr);
+  }
+}
