@@ -37,11 +37,15 @@ const db: DB = {
         title: "social media API",
         description: "A basic social media API built with FastAPI",
         image: "./social.jpg",
+        link: "https://github.com/sudodeo/Social-media-API",
+        btnMessage: "View on Github",
       },
       {
         title: "gizmo",
         description: "friendly discord bot",
         image: "./gizmo.jpg",
+        link: "https://github.com/sudodeo/gizmo",
+        btnMessage: "Request demo",
       },
     ],
     second_column: [
@@ -49,12 +53,16 @@ const db: DB = {
         title: "storeX",
         description: "Robust e-commerce Api",
         image: "./storex.jpg",
+        link: "https://github.com/sudodeo/storeX",
+        btnMessage: "View on Github",
       },
       {
         title: "tech news API",
         description:
           "A scraper that gets trending tech content from different news sites and serves them via an API",
         image: "./technews.jpg",
+        link: "https://github.com/sudodeo/tech-news-api",
+        btnMessage: "View on Github",
       },
     ],
   },
