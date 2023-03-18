@@ -71,7 +71,7 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <a href=""> Testimonials</a>
+          <a href="">Testimonial</a>
         </li>
         <li>
           <a href="" onClick={(e) => scrollToSection(e, "contact")}>
