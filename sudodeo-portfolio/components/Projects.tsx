@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import db from "../db";
+import { v4 as uuidv4 } from "uuid";
 
 const Projects = () => {
   return (
@@ -17,7 +18,7 @@ const Projects = () => {
         {
           // @ts-ignore
           db.projects.first_column.map((item) => (
-            <ProjectCard {...item} />
+            <ProjectCard {...item} key={uuidv4()} />
           ))
         }
       </div>
@@ -26,7 +27,7 @@ const Projects = () => {
         {
           // @ts-ignore
           db.projects.second_column.map((item) => (
-            <ProjectCard {...item} />
+            <ProjectCard {...item} key={uuidv4()} />
           ))
         }
       </div>
