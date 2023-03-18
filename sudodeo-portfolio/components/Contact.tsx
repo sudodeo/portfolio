@@ -28,7 +28,7 @@ const Contact = () => {
       <h2 className="text-center title">Let's talk</h2>
 
       <div className="mt-20 grid lg:grid-cols-2 gap-10">
-        <ul className="count_info lg:order-2">
+        <ul className="contact_info lg:order-2">
           <li data-aos="fade-left">
             <h3>{db!.address}</h3>
             <div>
