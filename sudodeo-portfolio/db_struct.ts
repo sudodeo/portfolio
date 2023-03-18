@@ -23,6 +23,7 @@ export default interface DB {
     twitter: string;
     linkedIn: string;
     discord: string;
+    github: string;
   };
   testimonials: Testimonial[];
   yearsOfExperience: number;
