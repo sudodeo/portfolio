@@ -198,23 +198,23 @@ textarea:not(:placeholder-shown) {
   @apply border-b-white;
 }
 
-.count_info {
+.contact_info {
   @apply gap-3 md:gap-5 lg:gap-10 flex flex-col md:flex-row lg:flex-col w-full;
 }
 
-.count_info li {
+.contact_info li {
   @apply bg-[var(--purple-quaternary)] border border-[var(--gray-secondary)] p-5 w-full;
 }
 
-.count_info li h3 {
+.contact_info li h3 {
   @apply text-base lg:text-xl mb-5;
 }
 
-.count_info li > div {
+.contact_info li > div {
   @apply flex items-center gap-2 lg:gap-5 text-[var(--gray-primary)];
 }
 
-.count_info li > div > div {
+.contact_info li > div > div {
   color: var(--orange-primary);
   @apply bg-white w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center rounded-full;
   flex-shrink: 0;
@@ -248,4 +248,23 @@ textarea:not(:placeholder-shown) {
 .projects > div:nth-child(2) > article:nth-child(2),
 .projects > div:nth-child(2) > article:nth-child(2) > .bg_color {
   background-color: #e75b17;
+}
+
+.testimonials {
+  background-image: url(../public/testimonial_bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials > div {
+  grid-template-columns: 1fr 100px;
+}
+
+.testimonials .button_navigation {
+  @apply bg-[#24206a] flex sm:flex-col justify-center items-center gap-5;
+}
+
+.button_navigation button {
+  @apply text-white sm:w-16 sm:h-16 flex items-center justify-center rounded-full border border-white hover:border-[#5261e7] transition;
 }

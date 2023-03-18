@@ -8,6 +8,7 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import LoadingScreen from "../components/LoadingScreen";
 import Projects from "../components/Projects";
+import Testimonials from "../components/Testimonials";
 
 export default function Home() {
   // display loader for 5 seconds
@@ -61,6 +62,7 @@ export default function Home() {
           <div className="w-full overflow-hidden">
             <About />
             <Projects />
+            <Testimonials />
             <Contact />
           </div>
         </>
