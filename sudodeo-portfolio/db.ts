@@ -21,14 +21,22 @@ const db: DB = {
   },
   testimonials: [
     {
-      id: uuidv4(),
-      name: "John Doe",
-      comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      name: "Alex Duboir",
+      comment:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias amet perspiciatis neque architecto delectus vel rem repudiandae esse, quas a ducimus? Sunt aspernatur ex autem recusandae nihil voluptates, quis iusto perferendis. Ipsam magnam explicabo, at suscipit porro optio tempora officiis vero blanditiis autem ex voluptas deleniti perspiciatis? Numquam ipsum.",
+      business: "Tech tycoon",
     },
     {
-      id: uuidv4(),
       name: "Jane Doe",
-      comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      comment:
+        "culpa aliquam, sequi dolorem consectetur saepe exercitationem esse, aut maxime fugiat ab molestias. Odit fugit in veniam distinctio, consectetur tempora aspernatur voluptatum dolorum, quasi nulla pariatur porro deleniti, deserunt rem ratione. Ipsum eos optio nam culpa, nesciunt soluta aliquam adipisci repudiandae excepturi quibusdam ex tempore, beatae esse quia illum iure.",
+      business: "CEO of something",
+    },
+    {
+      name: "Aliu Sanjoze", // I no know wetin I dey name sha 😂
+      comment:
+        "cu quasi nulla pariatur porro deleniti, deserunt rem ratione. Ipsum eos optio nam culpa, nesciunt soluta aliquam adipisci repudiandae excepturi quibusdam ex tempore, beatae esse quia illum iure.",
+      business: "footballer",
     },
   ],
   yearsOfExperience: 3,
