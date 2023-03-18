@@ -8,6 +8,8 @@ type Project = {
   title: string;
   description?: string;
   image?: string;
+  link: string;
+  btnMessage: string;
 };
 
 export default interface DB {
