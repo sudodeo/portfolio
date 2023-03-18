@@ -14,7 +14,7 @@ const Header = () => {
         <h1 className="text-5xl sm:text-7xl xl:text-8xl font-bold lg:whitespace-nowrap">
           I'm <span className="name">Deolu</span> {/* <br /> Adesola */}
         </h1>
-        <h3 className="mt-3 text-base md:text-lg lg:text-xl font-mono">
+        <h3 className="mt-3 mb-10 text-base md:text-lg lg:text-xl font-mono">
           {"{ Backend Developer }"}
         </h3>
 
