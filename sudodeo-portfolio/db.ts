@@ -17,6 +17,7 @@ const db: DB = {
     twitter: "https://www.twitter.com/sudodeo",
     linkedIn: "https://www.linkedin.com/in/sudodeo",
     discord: "https://www.discord.com/sudodeo",
+    github: "https://www.github.com/sudodeo",
   },
   testimonials: [
     {
