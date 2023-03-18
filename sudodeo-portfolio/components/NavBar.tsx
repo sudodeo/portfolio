@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Button from "@mui/material/Button";
+import scrollToSection from "./scrollToSection";
 
 const NavBar = () => {
   // show and hide navbar on scroll up and scroll down respectively
@@ -29,12 +30,6 @@ const NavBar = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [prevScrollPos, visible, handleScroll]);
-
-  function scrollToSection(e: any, id: string) {
-    e.preventDefault();
-    const section = document.getElementById(id);
-    section?.scrollIntoView({ behavior: "smooth" });
-  }
 
   return (
     <nav
