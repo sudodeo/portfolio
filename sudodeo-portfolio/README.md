@@ -1,6 +1,6 @@
 # Sudodeo Portfolio Site
 
-This is the repository for my personal portfolio site, "Sudodeo". This site showcases my work, skills, and experience as a web developer.
+This is the repository for my personal portfolio site, "Sudodeo". This site showcases my work, skills, and experience as a backend developer.
 
 Features
 
