@@ -12,12 +12,18 @@ type Project = {
   btnMessage: string;
 };
 
+type Skill = {
+  title: string;
+  description: string;
+};
+
 export default interface DB {
   name: string;
   phone: string;
   email: string;
   address: string;
   about: string[];
+  skills: Skill[];
   socials: {
     instagram: string;
     twitter: string;

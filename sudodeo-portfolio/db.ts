@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
 import DB from "./db_struct";
 
 //👋 Hi Dee, make changes to the db here
@@ -11,6 +10,21 @@ const db: DB = {
     "I'm Adesola Adeoluwa, a backend developer who is on a mission to bring order to the chaos of the digital world.",
     "I love working on complex projects that require a bit of creativity and a lot of caffeine. When I'm not coding, you can find me enjoying a good cup of coffee (or five) or honing my skills as a mediocre chef.",
     "I'm an expert in web automation, and I'm not afraid to use my powers for good. So let's join forces and create something amazing - the world could use a little more laughter and a lot less error messages.",
+  ],
+  skills: [
+    {
+      title: "backend development",
+      description:
+        "I build robust APIs that are scalable and easy to maintain.",
+    },
+    {
+      title: "web automation",
+      description: "I build bots that automate repetitive tasks on the web.",
+    },
+    {
+      title: "web scraping",
+      description: "I build bots that scrape data from websites.",
+    },
   ],
   socials: {
     instagram: "https://www.instagram.com/sudodeo",
