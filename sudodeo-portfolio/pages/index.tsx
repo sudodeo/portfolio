@@ -9,6 +9,7 @@ import Contact from "../components/Contact";
 import LoadingScreen from "../components/LoadingScreen";
 import Projects from "../components/Projects";
 import Testimonials from "../components/Testimonials";
+import Footer from "../components/Footer";
 
 export default function Home() {
   // display loader for 5 seconds
@@ -64,6 +65,7 @@ export default function Home() {
             <Projects />
             <Testimonials />
             <Contact />
+            <Footer />
           </div>
         </>
       )}
