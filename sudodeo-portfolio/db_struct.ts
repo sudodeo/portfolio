@@ -1,7 +1,7 @@
 type Testimonial = {
-  id: string;
   name: string;
   comment: string;
+  business: string;
 };
 
 type Project = {
