@@ -1,5 +1,4 @@
 import Head from "next/head";
-import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,6 +9,10 @@ import LoadingScreen from "../components/LoadingScreen";
 import Projects from "../components/Projects";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
+import dynamic from "next/dynamic";
+const NavBar = dynamic(() => import("../components/NavBar"), {
+  ssr: false,
+});
 
 export default function Home() {
   // display loader for 5 seconds
@@ -53,22 +56,20 @@ export default function Home() {
         <link rel="icon" href="favicons/sudo-favicon.ico" />
       </Head>
 
-      {loading ? (
-        <LoadingScreen />
-      ) : (
-        <>
-          <NavBar />
-          <Header />
+      {loading && <LoadingScreen />}
 
-          <div className="w-full overflow-hidden">
-            <About />
-            <Projects />
-            <Testimonials />
-            <Contact />
-            <Footer />
-          </div>
-        </>
-      )}
+      <>
+        <NavBar />
+        <Header />
+
+        <div className="w-full overflow-hidden">
+          <About />
+          <Projects />
+          <Testimonials />
+          <Contact />
+          <Footer />
+        </div>
+      </>
     </>
   );
 }
