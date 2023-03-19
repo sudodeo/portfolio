@@ -27,7 +27,7 @@ const Contact = () => {
     <section className="universal_x universal_y second_bg" id="contact">
       <h2 className="text-center title">Let's talk</h2>
 
-      <div className="mt-20 grid lg:grid-cols-2 gap-10">
+      <div className="md:mt-20 grid lg:grid-cols-2 gap-10">
         <ul className="contact_info lg:order-2">
           <li data-aos="fade-left">
             <h3>{db!.address}</h3>
