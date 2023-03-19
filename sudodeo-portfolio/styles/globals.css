@@ -117,7 +117,6 @@ nav aside {
     background-color: #0c0b478a;
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
-    animation: fadeOut 0.3s ease-in-out;
   }
 }
 
@@ -138,17 +137,6 @@ nav aside.show {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
   }
 }
 
