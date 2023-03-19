@@ -56,9 +56,9 @@ export default function Home() {
         <link rel="icon" href="favicons/sudo-favicon.ico" />
       </Head>
 
-      {loading && <LoadingScreen />}
-
       <>
+        {loading && <LoadingScreen />}
+
         <NavBar />
         <Header />
 
