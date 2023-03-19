@@ -178,6 +178,23 @@ nav aside.show {
   right: 20%;
   bottom: -5%;
   @apply w-[180px] md:w-[200px];
+  animation: 1s ease-in-out 0s 1 fadeInRight;
+  animation-delay: 3s;
+}
+
+/* fade in left */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 a img {
