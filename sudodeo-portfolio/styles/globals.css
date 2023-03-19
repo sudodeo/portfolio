@@ -70,7 +70,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .universal_y {
-  @apply py-12 md:py-20 lg:py-40;
+  @apply py-[4.5rem] md:py-20 lg:py-40;
 }
 
 .title {
@@ -104,6 +104,52 @@ nav.nav_visible {
 nav ul li a:hover {
   color: var(--orange-primary);
   cursor: pointer;
+}
+
+nav aside {
+  visibility: hidden;
+  opacity: 0;
+  background-color: var(--purple-primary);
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  nav aside {
+    background-color: #0c0b478a;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    animation: fadeOut 0.3s ease-in-out;
+  }
+}
+
+nav aside ul {
+  border-top: 1px solid var(--purple-tertiary);
+  border-bottom: 1px solid var(--purple-tertiary);
+}
+
+nav aside.show {
+  visibility: visible;
+  opacity: 1;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .name {
