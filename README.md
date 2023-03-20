@@ -12,9 +12,9 @@ Features
 ## Technologies Used
 
 - Next js
-- typescript
+- Typescript
 - JavaScript
-- css
+- CSS
 
 # How to Use
 
