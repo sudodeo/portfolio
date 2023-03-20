@@ -15,18 +15,11 @@ const NavBar = dynamic(() => import("../components/NavBar"), {
 });
 
 export default function Home() {
-  // display loader for 5 seconds
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     AOS.init({
       duration: 500,
       // once: true,
     });
-
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
   }, []);
 
   return (
@@ -35,6 +28,7 @@ export default function Home() {
         <title>Sudodeo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        {/* SEO */}
         <meta
           name="title"
           content=" Adeoluwa Adesola - Backend Developer Portfolio"
@@ -52,12 +46,54 @@ export default function Home() {
         <meta name="language" content="English" />
         <meta name="author" content="Michael Israel" />
 
+        {/* more SEO */}
+        <meta name="theme-color" content="#0c0b47" />
+        <meta name="msapplication-TileColor" content="#0c0b47" />
+        <meta name="msapplication-TileImage" content="/preview_sq.png" />
+        <meta
+          name="msapplication-config"
+          content="/favicons/browserconfig.xml"
+        />
+        <meta name="application-name" content="Sudodeo" />
+        <meta name="apple-mobile-web-app-title" content="Sudodeo" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        {/* open graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sudodeo.dev/" />
+        <meta
+          property="og:title"
+          content="Adeoluwa Adesola - Backend Developer"
+        />
+        <meta property="og:description" content="Backend Developer Portfolio" />
+        <meta property="og:site_name" content="Sudodeo" />
+        {/* dimension - 1200×630 pixels */}
+        <meta property="og:image" content="/OG_card.png" />
+
+        {/* twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://sudodeo.dev/" />
+        <meta
+          property="twitter:title"
+          content="Adeoluwa Adesola - Backend Developer"
+        />
+        <meta
+          property="twitter:description"
+          content="Backend Developer Portfolio"
+        />
+        <meta property="twitter:site" content="@sudodeo" />
+        <meta property="twitter:creator" content="@mikelisrael" />
+        {/* dimension - 1024×512 pixels */}
+        <meta property="twitter:image" content="/twitter_card.png" />
+
         {/* Favicon */}
         <link rel="icon" href="favicons/sudo-favicon.ico" />
+        <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="favicons/sudo-favicon.ico" />
       </Head>
 
       <>
-        {loading && <LoadingScreen />}
+        <LoadingScreen />
 
         <NavBar />
         <Header />
