@@ -4,7 +4,7 @@ import DB from "./db_struct";
 const db: DB = {
   name: "Sudodeo",
   phone: "+2348130000000", // 13 characters after +, spaces are allowed
-  email: "sudodeo@gmail.com",
+  email: "adesolaadeoluwa@gmail.com",
   address: "Lagos, Nigeria",
   about: [
     "I'm Adesola Adeoluwa, a backend developer who is on a mission to bring order to the chaos of the digital world.",
@@ -27,10 +27,10 @@ const db: DB = {
     },
   ],
   socials: {
-    instagram: "https://www.instagram.com/sudodeo",
-    twitter: "https://www.twitter.com/sudodeo",
-    linkedIn: "https://www.linkedin.com/in/sudodeo",
-    discord: "https://www.discord.com/sudodeo",
+    instagram: "https://www.instagram.com/_.deolu",
+    twitter: "https://www.twitter.com/deolu_ad",
+    linkedIn: "https://www.linkedin.com/in/adeoluwa-adesola-dev/",
+    discord: "https://discordapp.com/741308876204408854",
     github: "https://www.github.com/sudodeo",
   },
   testimonials: [
