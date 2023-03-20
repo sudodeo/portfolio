@@ -75,7 +75,7 @@ const db: DB = {
       {
         title: "storeX",
         description: "Robust e-commerce Api",
-        image: "./storex.jpg",
+        image: "./storeX.jpg",
         link: "https://github.com/sudodeo/storeX",
         btnMessage: "View on Github",
       },
