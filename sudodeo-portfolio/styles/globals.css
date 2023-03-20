@@ -250,6 +250,17 @@ textarea:not(:placeholder-shown) {
   @apply border-b-white;
 }
 
+/* remove input autofill bg */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--purple-quaternary) inset !important;
+  -webkit-text-fill-color: var(--white) !important;
+  /* show cursor */
+  caret-color: var(--white) !important;
+}
+
 .contact_info {
   @apply gap-3 md:gap-5 lg:gap-10 flex flex-col md:flex-row lg:flex-col w-full;
 }
