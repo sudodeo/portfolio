@@ -7,8 +7,8 @@ const db: DB = {
   email: "adesolaadeoluwa@gmail.com",
   address: "Lagos, Nigeria",
   about: [
-    "I'm Adesola Adeoluwa, a backend developer who is on a mission to bring order to the chaos of the digital world.",
-    "I love working on complex projects that require a bit of creativity and a lot of caffeine. When I'm not coding, you can find me enjoying a good cup of coffee (or five) or honing my skills as a mediocre chef.",
+    "I'm Adesola Adeoluwa, a backend developer who is on a mission to make life easier - one line of code at a time.",
+    "When I'm not busy coding, you can find me either watching football, listening to music, or playing video games. I mean, a developer's gotta have some downtime, right? But don't worry, I'm always eager to learn new things and stay up-to-date with the latest tech trends.",
     "I'm an expert in web automation, and I'm not afraid to use my powers for good. So let's join forces and create something amazing - the world could use a little more laughter and a lot less error messages.",
   ],
   skills: [
