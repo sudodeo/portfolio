@@ -42,7 +42,7 @@ const Footer = () => {
       </nav>
 
       <center className="second_bg py-5">
-        &copy; 2023. All rights reserved.
+        <small>&copy; 2023. All rights reserved.</small>
       </center>
     </div>
   );
