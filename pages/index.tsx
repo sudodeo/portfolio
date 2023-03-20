@@ -70,26 +70,28 @@ export default function Home() {
         />
         <meta property="og:description" content="Backend Developer Portfolio" />
         <meta property="og:site_name" content="Sudodeo" />
+        <meta property="og:image:alt" content="Sudodeo Banner" />
         {/* dimension - 1200×630 pixels */}
         <meta property="og:image" content="https://sudodeo.dev/OG_card.png" />
 
-        {/* twitter */}
+        {/* twitter, twitter like name not property */}
         <meta
           name="twitter:image:src"
           content="https://sudodeo.dev/preview_sq.png"
         />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://sudodeo.dev/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://sudodeo.dev/" />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="Adeoluwa Adesola - Backend Developer"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="Backend Developer Portfolio"
         />
-        <meta property="twitter:site" content="@sudodeo" />
-        <meta property="twitter:creator" content="@mikelisrael" />
+        <meta name="twitter:site" content="@sudodeo" />
+        <meta name="twitter:creator" content="@mikelisrael" />
+        <meta name="twitter:image:alt" content="Sudodeo Banner" />
 
         {/* Favicon */}
         <link rel="icon" href="favicons/sudo-favicon.ico" />
