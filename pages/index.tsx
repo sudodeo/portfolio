@@ -68,10 +68,13 @@ export default function Home() {
         <meta property="og:description" content="Backend Developer Portfolio" />
         <meta property="og:site_name" content="Sudodeo" />
         {/* dimension - 1200×630 pixels */}
-        <meta property="og:image" content="/OG_card.png" />
+        <meta property="og:image" content="https://sudodeo.dev/OG_card.png" />
 
         {/* twitter */}
-        <meta name="twitter:image:src" content="/OG_card.png" />
+        <meta
+          name="twitter:image:src"
+          content="https://sudodeo.dev/OG_card.png"
+        />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://sudodeo.dev/" />
         <meta
