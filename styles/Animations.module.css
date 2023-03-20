@@ -2,6 +2,7 @@
 .portrait {
   animation: fadeInUp 1s ease-out;
   animation-fill-mode: backwards;
+  animation-delay: 3s;
 }
 
 .loader {
@@ -10,6 +11,8 @@
   animation-fill-mode: backwards;
   animation-delay: 3s;
   opacity: 0;
+  visibility: hidden;
+  background-color: var(--purple-primary);
 }
 
 .loader img {
@@ -71,8 +74,10 @@
 @keyframes fadeOut {
   0% {
     opacity: 1;
+    visibility: visible;
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }

@@ -22,6 +22,7 @@
   padding: 0;
   outline-color: transparent;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -177,6 +178,23 @@ nav aside.show {
   right: 20%;
   bottom: -5%;
   @apply w-[180px] md:w-[200px];
+  animation: 1s ease-in-out 0s 1 fadeInRight;
+  animation-delay: 3s;
+}
+
+/* fade in left */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 a img {
@@ -230,6 +248,17 @@ textarea {
 input:not(:placeholder-shown),
 textarea:not(:placeholder-shown) {
   @apply border-b-white;
+}
+
+/* remove input autofill bg */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--purple-quaternary) inset !important;
+  -webkit-text-fill-color: var(--white) !important;
+  /* show cursor */
+  caret-color: var(--white) !important;
 }
 
 .contact_info {
@@ -301,4 +330,14 @@ textarea:not(:placeholder-shown) {
 
 .button_navigation button {
   @apply text-white sm:w-16 sm:h-16 flex items-center justify-center rounded-full border border-white hover:border-[#5261e7] transition;
+}
+
+/* style react toastify */
+.Toastify__toast-body {
+  font-family: "Poppins", sans-serif !important;
+  @apply !text-sm;
+}
+
+.Toastify__toast--error {
+  @apply !bg-red-500;
 }

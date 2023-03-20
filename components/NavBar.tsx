@@ -58,7 +58,6 @@ const NavBar = () => {
           ? "nav_transparent"
           : (visible || menuOpen) && "nav_visible"
       }`}
-      data-aos="fade-in"
       style={{
         // hide navbar on scroll down
         transform:

@@ -1,15 +1,77 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import HeadsetMicOutlinedIcon from "@mui/icons-material/HeadsetMicOutlined";
 import PhoneEnabledOutlinedIcon from "@mui/icons-material/PhoneEnabledOutlined";
+import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
+import ErrorOutlineOutlinedIcon from "@mui/icons-material/ErrorOutlineOutlined";
 import db from "../db";
 import { Button } from "@mui/material";
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
+
+type LoadingState = {
+  loading: boolean;
+  success: boolean;
+  error: boolean;
+  completed: boolean;
+};
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement | null>(null);
+  const [loadState, setLoadState] = useState<LoadingState>({
+    loading: false,
+    success: false,
+    error: false,
+    completed: false,
+  });
+
+  const changeLoadState = (
+    loading: boolean,
+    success: boolean,
+    error: boolean,
+    completed: boolean
+  ) => {
+    setLoadState({ loading, success, error, completed });
+
+    // after 5 seconds, if completed, reset to initial state
+    if (completed) {
+      setTimeout(() => {
+        setLoadState({
+          loading: false,
+          success: false,
+          error: false,
+          completed: false,
+        });
+      }, 5000);
+    }
+  };
+
   function handleSubmit(e: any) {
-    // prevent default form submission
     e.preventDefault();
+    changeLoadState(true, false, false, false);
+
+    // send email
+    emailjs
+      .sendForm(
+        "service_hx0j4fl",
+        "template_xmt4z0s",
+        // @ts-ignore
+        formRef.current,
+        "2V3W905CrGH39PLBX"
+      )
+      .then(
+        (result) => {
+          changeLoadState(false, true, false, true);
+          // @ts-ignore
+          formRef.current.reset();
+        },
+        (error) => {
+          changeLoadState(false, false, true, true);
+          toast.error("Something went wrong. Check connection");
+        }
+      );
   }
 
   // format phone number
@@ -74,6 +136,7 @@ const Contact = () => {
           className="bg-[var(--purple-quaternary)] border border-[var(--gray-secondary)] px-5 md:px-10 py-8 md:py-16"
           data-aos="fade-right"
           onSubmit={handleSubmit}
+          ref={formRef}
         >
           <h3 className="text-3xl font-medium capitalize mb-16 text-center">
             Get in touch
@@ -128,12 +191,56 @@ const Contact = () => {
           </div>
 
           <center className="mt-10">
-            <Button className="main_btn !w-56" type="submit">
-              Send message
+            <Button
+              className="main_btn !w-56 gap-2"
+              type="submit"
+              disabled={loadState.loading || loadState.completed}
+            >
+              {/* loader */}
+              {loadState.loading && (
+                <span className="animate-spin border-[3px] border-[var(--gray-primary)] w-5 h-5 border-t-[var(--orange-primary)] rounded-full"></span>
+              )}
+
+              {/* success */}
+              {loadState.success && (
+                <span className="text-green-400">
+                  <CheckCircleOutlinedIcon />
+                </span>
+              )}
+
+              {/* error */}
+              {loadState.error && (
+                <span className="text-red-400">
+                  <ErrorOutlineOutlinedIcon />
+                </span>
+              )}
+
+              <div>
+                {loadState.loading
+                  ? "Sending..."
+                  : loadState.success
+                  ? "Sent"
+                  : loadState.error
+                  ? "Error"
+                  : "Send Message"}
+              </div>
             </Button>
           </center>
         </form>
       </div>
+
+      <ToastContainer
+        position="bottom-center"
+        autoClose={3000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        theme="colored"
+        transition={Slide}
+      />
     </section>
   );
 };
