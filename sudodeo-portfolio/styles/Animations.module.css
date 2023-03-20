@@ -11,6 +11,7 @@
   animation-fill-mode: backwards;
   animation-delay: 3s;
   opacity: 0;
+  visibility: hidden;
   background-color: var(--purple-primary);
 }
 
@@ -73,8 +74,10 @@
 @keyframes fadeOut {
   0% {
     opacity: 1;
+    visibility: visible;
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
