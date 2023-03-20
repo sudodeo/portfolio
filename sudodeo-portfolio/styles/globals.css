@@ -331,3 +331,13 @@ input:-webkit-autofill:active {
 .button_navigation button {
   @apply text-white sm:w-16 sm:h-16 flex items-center justify-center rounded-full border border-white hover:border-[#5261e7] transition;
 }
+
+/* style react toastify */
+.Toastify__toast-body {
+  font-family: "Poppins", sans-serif !important;
+  @apply !text-sm;
+}
+
+.Toastify__toast--error {
+  @apply !bg-red-500;
+}
