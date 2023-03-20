@@ -71,6 +71,7 @@ export default function Home() {
         <meta property="og:image" content="/OG_card.png" />
 
         {/* twitter */}
+        <meta name="twitter:image:src" content="/OG_card.png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://sudodeo.dev/" />
         <meta
@@ -83,8 +84,6 @@ export default function Home() {
         />
         <meta property="twitter:site" content="@sudodeo" />
         <meta property="twitter:creator" content="@mikelisrael" />
-        {/* dimension - 1024×512 pixels */}
-        <meta property="twitter:image" content="/twitter_card.png" />
 
         {/* Favicon */}
         <link rel="icon" href="favicons/sudo-favicon.ico" />
