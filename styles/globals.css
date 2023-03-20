@@ -314,7 +314,7 @@ input:-webkit-autofill:active {
 }
 
 .testimonials {
-  background-image: url(../public/testimonial_bg.png);
+  background-image: url("../public/testimonial_bg.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
