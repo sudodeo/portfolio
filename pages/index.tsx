@@ -62,25 +62,20 @@ export default function Home() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
         {/* open graph */}
+        {/* Facebook Meta Tags  */}
+        <meta property="og:url" content="https://www.sudodeo.dev/" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sudodeo.dev/" />
         <meta
           property="og:title"
           content="Adeoluwa Adesola - Backend Developer"
         />
         <meta property="og:description" content="Backend Developer Portfolio" />
-        <meta property="og:site_name" content="Sudodeo" />
-        <meta property="og:image:alt" content="Sudodeo Banner" />
-        {/* dimension - 1200×630 pixels */}
         <meta property="og:image" content="https://sudodeo.dev/OG_card.png" />
 
-        {/* twitter, twitter like name not property */}
-        <meta
-          name="twitter:image:src"
-          content="https://sudodeo.dev/preview_sq.png"
-        />
+        {/* Twitter Meta Tags  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://sudodeo.dev/" />
+        <meta property="twitter:domain" content="sudodeo.dev" />
+        <meta property="twitter:url" content="https://www.sudodeo.dev/" />
         <meta
           name="twitter:title"
           content="Adeoluwa Adesola - Backend Developer"
@@ -89,9 +84,7 @@ export default function Home() {
           name="twitter:description"
           content="Backend Developer Portfolio"
         />
-        <meta name="twitter:site" content="@sudodeo" />
-        <meta name="twitter:creator" content="@mikelisrael" />
-        <meta name="twitter:image:alt" content="Sudodeo Banner" />
+        <meta name="twitter:image" content="https://sudodeo.dev/OG_card.png" />
 
         {/* Favicon */}
         <link rel="icon" href="favicons/sudo-favicon.ico" />
