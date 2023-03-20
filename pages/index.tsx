@@ -49,7 +49,10 @@ export default function Home() {
         {/* more SEO */}
         <meta name="theme-color" content="#0c0b47" />
         <meta name="msapplication-TileColor" content="#0c0b47" />
-        <meta name="msapplication-TileImage" content="/preview_sq.png" />
+        <meta
+          name="msapplication-TileImage"
+          content="https://sudodeo.dev/preview_sq.png"
+        />
         <meta
           name="msapplication-config"
           content="/favicons/browserconfig.xml"
@@ -73,7 +76,7 @@ export default function Home() {
         {/* twitter */}
         <meta
           name="twitter:image:src"
-          content="https://sudodeo.dev/OG_card.png"
+          content="https://sudodeo.dev/preview_sq.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://sudodeo.dev/" />
