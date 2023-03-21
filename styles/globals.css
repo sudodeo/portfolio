@@ -214,6 +214,15 @@ a img:hover {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.tabs > div {
+  /* overflow-x: auto; */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  min-width: 410px;
 }
 
 /* FireFox */
