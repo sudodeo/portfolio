@@ -25,6 +25,15 @@ const About = () => {
         // if (window.innerWidth < 768)
         tabBtn.scrollIntoView({ behavior: "smooth" });
       });
+
+      // scroll tabs class to the left of active tab
+      if (tabBtn.classList.contains("active")) {
+        const tabs = document.querySelector(".tabs");
+        tabs?.scrollTo({
+          left: (tabBtn as HTMLElement).offsetLeft,
+          behavior: "smooth",
+        });
+      }
     });
   };
 
@@ -71,7 +80,7 @@ const About = () => {
               activeTab === "Stacks" && "active"
             } w-full pb-5 pt-10`}
           >
-            Stacks
+            Languages & Tools
           </button>
         </div>
       </section>
