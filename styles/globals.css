@@ -222,7 +222,7 @@ a img:hover {
   /* overflow-x: auto; */
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  min-width: 410px;
+  min-width: 500px;
 }
 
 /* FireFox */
