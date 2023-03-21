@@ -1,5 +1,4 @@
 import React from "react";
-import SmartToyIcon from "@mui/icons-material/SmartToy";
 import styles from "../styles/Skills.module.css";
 import db from "../db";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";

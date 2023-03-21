@@ -1,6 +1,7 @@
 import React from "react";
 import AboutTab from "./AboutTab";
 import SkillTab from "./SkillTab";
+import StacksTab from "./StacksTab";
 
 const About = () => {
   const [activeTab, setActiveTab] = React.useState("About");
@@ -37,34 +38,48 @@ const About = () => {
         About me
       </h2>
 
-      <section className="tabs flex items-center text-base md:text-lg border-b border-gray-500 relative gap-5">
-        <div className="indicator absolute bg-white h-[2px] -bottom-[1px]"></div>
-
-        <button
-          role="tab"
-          tabIndex={activeTab === "About" ? 0 : -1}
-          onClick={() => {
-            setActiveTab("About");
-          }}
-          className={`${activeTab === "About" && "active"} w-full pb-5 pt-10`}
-        >
-          About
-        </button>
-        <button
-          onClick={() => {
-            setActiveTab("Skill");
-          }}
-          tabIndex={activeTab === "Skill" ? 0 : -1}
-          role="tab"
-          className={`${activeTab === "Skill" && "active"} w-full pb-5 pt-10`}
-        >
-          Skills & Services
-        </button>
+      <section className="tabs  text-base md:text-lg">
+        <div className="flex items-center gap-1 border-b border-gray-500 relative">
+          <div className="indicator absolute bg-white h-[2px] -bottom-[1px]"></div>
+          <button
+            role="tab"
+            tabIndex={activeTab === "About" ? 0 : -1}
+            onClick={() => {
+              setActiveTab("About");
+            }}
+            className={`${activeTab === "About" && "active"} w-full pb-5 pt-10`}
+          >
+            About
+          </button>
+          <button
+            onClick={() => {
+              setActiveTab("Skill");
+            }}
+            tabIndex={activeTab === "Skill" ? 0 : -1}
+            role="tab"
+            className={`${activeTab === "Skill" && "active"} w-full pb-5 pt-10`}
+          >
+            Skills & Services
+          </button>
+          <button
+            onClick={() => {
+              setActiveTab("Stacks");
+            }}
+            tabIndex={activeTab === "Stacks" ? 0 : -1}
+            role="tab"
+            className={`${
+              activeTab === "Stacks" && "active"
+            } w-full pb-5 pt-10`}
+          >
+            Stacks
+          </button>
+        </div>
       </section>
 
       <section className="relative  min-h-[500px]">
         {activeTab === "About" && <AboutTab />}
         {activeTab === "Skill" && <SkillTab />}
+        {activeTab === "Stacks" && <StacksTab />}
       </section>
     </section>
   );
