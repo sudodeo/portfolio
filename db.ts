@@ -80,11 +80,11 @@ const db: DB = {
         btnMessage: "View on Github",
       },
       {
-        title: "tech news API",
+        title: "TechTimes",
         description:
           "A scraper that gets trending tech content from different news sites and serves them via an API",
         image: "./technews.jpg",
-        link: "https://github.com/sudodeo/tech-news-api",
+        link: "https://github.com/sudodeo/TechTimes",
         btnMessage: "View on Github",
       },
     ],
