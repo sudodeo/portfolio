@@ -35,10 +35,10 @@ const db: DB = {
   },
   testimonials: [
     {
-      name: "Alex Duboir",
+      name: "Hamud Sadek",
       comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias amet perspiciatis neque architecto delectus vel rem repudiandae esse, quas a ducimus? Sunt aspernatur ex autem recusandae nihil voluptates, quis iusto perferendis. Ipsam magnam explicabo, at suscipit porro optio tempora officiis vero blanditiis autem ex voluptas deleniti perspiciatis? Numquam ipsum.",
-      business: "Tech tycoon",
+        "I had the pleasure of working with Deolu on a development project and I have to say that he is truly exceptional. He is an incredibly talented developer with a keen eye for detail and a strong work ethic. Out of all the developers I have worked with, Deolu stands out as the best. In fact, I was so impressed with his work that I made him the dedicated developer for our group. I know that whenever I need monitors or any other development work done, I can count on Deolu to deliver exceptional results in a timely manner. Thank you Deolu for your hard work and dedication, you truly are the best.",
+      business: "Satori io",
     },
     {
       name: "Jane Doe",
