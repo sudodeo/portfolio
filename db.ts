@@ -3,7 +3,7 @@ import DB from "./db_struct";
 //👋 Hi Dee, make changes to the db here
 const db: DB = {
   name: "Sudodeo",
-  phone: "+2348130000000", // 13 characters after +, spaces are allowed
+  phone: "+2347055192925", // 13 characters after +, spaces are allowed
   email: "adesolaadeoluwa@gmail.com",
   address: "Lagos, Nigeria",
   about: [
@@ -37,32 +37,32 @@ const db: DB = {
     {
       name: "Hamud Sadek",
       comment:
-        "I had the pleasure of working with Deolu on a development project and I have to say that he is truly exceptional. He is an incredibly talented developer with a keen eye for detail and a strong work ethic. Out of all the developers I have worked with, Deolu stands out as the best. In fact, I was so impressed with his work that I made him the dedicated developer for our group. I know that whenever I need monitors or any other development work done, I can count on Deolu to deliver exceptional results in a timely manner. Thank you Deolu for your hard work and dedication, you truly are the best.",
+        "Working on a development project with Deolu was a pleasure, and I have to say that he is truly exceptional. He is a highly skilled developer with an excellent attention to detail and a solid work ethic. Deolu stands out as the best developer I've ever worked with. In fact, I was so impressed with his work that I appointed him our team's sole developer. I am confident that Deolu will consistently provide me with excellent work in a timely manner, whether I need monitors or assistance with any other type of development work.",
       business: "Satori io",
     },
     {
-      name: "Jane Doe",
+      name: "Dan Corleone",
       comment:
-        "culpa aliquam, sequi dolorem consectetur saepe exercitationem esse, aut maxime fugiat ab molestias. Odit fugit in veniam distinctio, consectetur tempora aspernatur voluptatum dolorum, quasi nulla pariatur porro deleniti, deserunt rem ratione. Ipsum eos optio nam culpa, nesciunt soluta aliquam adipisci repudiandae excepturi quibusdam ex tempore, beatae esse quia illum iure.",
-      business: "CEO of something",
+        "I recently had the opportunity of working with Deolu on a project, and I must say that he was an absolute delight to deal with. Deolu's attention to detail, communication abilities, and ability to complete tasks on schedule were all excellent. His work was of the finest quality and well beyond my expectations.",
+      business: "Ticket reseller",
     },
-    {
-      name: "Aliu Sanjoze", // I no know wetin I dey name sha 😂
-      comment:
-        "cu quasi nulla pariatur porro deleniti, deserunt rem ratione. Ipsum eos optio nam culpa, nesciunt soluta aliquam adipisci repudiandae excepturi quibusdam ex tempore, beatae esse quia illum iure.",
-      business: "footballer",
-    },
+    // {
+    //   name: "Aliu Sanjoze", // I no know wetin I dey name sha 😂
+    //   comment:
+    //     "cu quasi nulla pariatur porro deleniti, deserunt rem ratione. Ipsum eos optio nam culpa, nesciunt soluta aliquam adipisci repudiandae excepturi quibusdam ex tempore, beatae esse quia illum iure.",
+    //   business: "footballer",
+    // },
   ],
   yearsOfExperience: 3,
   projects: {
     first_column: [
-      {
-        title: "social media API",
-        description: "A basic social media API built with FastAPI",
-        image: "./social.jpg",
-        link: "https://github.com/sudodeo/Social-media-API",
-        btnMessage: "View on Github",
-      },
+      // {
+      //   title: "social media API",
+      //   description: "A basic social media API built with FastAPI",
+      //   image: "./social.jpg",
+      //   link: "https://github.com/sudodeo/Social-media-API",
+      //   btnMessage: "View on Github",
+      // },
       {
         title: "gizmo",
         description: "friendly discord bot",
