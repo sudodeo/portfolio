@@ -103,7 +103,11 @@ const Contact = () => {
           </li>
 
           <li data-aos="fade-left">
-            <h3>{db!.email}</h3>
+            <h3>
+              <a href={`mailto:${db!.email}`}>
+              {db!.email}
+              </a>
+            </h3>
             <div>
               <div>
                 <EmailOutlinedIcon fontSize="large" />
