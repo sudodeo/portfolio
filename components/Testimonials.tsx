@@ -28,12 +28,12 @@ const Testimonials = () => {
 
   return (
     <div
-      className="second_bg testimonials pl-6 md:pl-12 lg:pl-32 xl:pl-56 py-12 md:py-20"
+      className="second_bg testimonials py-12 pl-6 md:py-20 md:pl-12 lg:pl-32 xl:pl-56"
       id="testimonial"
     >
       <h2 className="title">Testimonial</h2>
 
-      <div className="min-h-[320px] bg-[#211f6396] border-b-[3px] border-t-[3px] border-[#332f80] sm:grid md:pr-12 lg:pr-32 xl:pr-56">
+      <div className="min-h-[320px] border-b-[3px] border-t-[3px] border-[#332f80] bg-[#211f6396] sm:grid md:pr-12 lg:pr-32 xl:pr-56">
         {db.testimonials.map((singleTestimonial, i) => {
           if (testimonial === i) {
             return <SingleTestimonial key={uuidv4()} {...singleTestimonial} />;
@@ -45,13 +45,13 @@ const Testimonials = () => {
             className="group sm:order-2"
             onClick={() => switchTestimonial("prev")}
           >
-            <div className="group-hover:bg-[#5261e7] p-[10px] rounded-full transition">
+            <div className="rounded-full p-[10px] transition group-hover:bg-[#5261e7]">
               <ArrowBackIosNewIcon />
             </div>
           </button>
 
           <button className="group" onClick={() => switchTestimonial("next")}>
-            <div className="group-hover:bg-[#5261e7] p-[10px] rounded-full transition">
+            <div className="rounded-full p-[10px] transition group-hover:bg-[#5261e7]">
               <ArrowForwardIosIcon />
             </div>
           </button>
