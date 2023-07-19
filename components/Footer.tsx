@@ -5,12 +5,12 @@ import Socials from "./Socials";
 const Footer = () => {
   return (
     <div>
-      <nav className="universal_x py-10 flex flex-col md:flex-row gap-x-10 gap-y-5 items-center justify-between">
+      <nav className="universal_x flex flex-col items-center justify-between gap-x-10 gap-y-5 py-10 md:flex-row">
         <a>
           <img
             src="./logo.png"
             alt="logo"
-            className="w-32 md:w-40 xl:w-48 cursor-pointer select-none"
+            className="w-32 cursor-pointer select-none md:w-40 xl:w-48"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           />
         </a>

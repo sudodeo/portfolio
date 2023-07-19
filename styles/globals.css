@@ -33,7 +33,7 @@ body {
   color: var(--white);
   position: relative;
   font-family: "Poppins", sans-serif;
-  @apply text-sm xl:text-base scroll-pt-44;
+  @apply scroll-pt-44 text-sm xl:text-base;
 }
 
 /* style scrollbar */
@@ -68,7 +68,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .universal_x {
-  @apply px-6 md:px-12 lg:px-32 xl:px-56;
+  @apply mx-auto max-w-6xl px-6;
+  /* @apply px-6 md:px-12 lg:px-32 xl:px-56; */
 }
 
 .universal_y {
@@ -76,7 +77,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .title {
-  @apply text-2xl sm:text-3xl xl:text-5xl font-bold capitalize mb-10;
+  @apply mb-10 text-2xl font-bold capitalize sm:text-3xl xl:text-5xl;
 }
 
 .second_bg {
@@ -84,7 +85,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .main_btn {
-  @apply !font-medium !capitalize !py-2 !px-4 !outline !outline-1 !outline-[var(--orange-primary)] !bg-transparent hover:!bg-[var(--purple-transparent)] !text-white !transition !duration-300 !ease-in-out;
+  @apply !bg-transparent !py-2 !px-4 !font-medium !capitalize !text-white !outline !outline-1 !outline-[var(--orange-primary)] !transition !duration-300 !ease-in-out hover:!bg-[var(--purple-transparent)];
   font-family: "Poppins", sans-serif !important;
 }
 
@@ -252,7 +253,7 @@ a img:hover {
 
 input,
 textarea {
-  @apply block w-full border-b border-[var(--gray-secondary)] pb-5 mt-2 bg-transparent !outline-none focus:border-b-white placeholder:text-[var(--gray-primary)] placeholder:capitalize  resize-none;
+  @apply mt-2 block w-full resize-none border-b border-[var(--gray-secondary)] bg-transparent pb-5 !outline-none placeholder:capitalize placeholder:text-[var(--gray-primary)]  focus:border-b-white;
 }
 
 input:not(:placeholder-shown),
@@ -272,24 +273,24 @@ input:-webkit-autofill:active {
 }
 
 .contact_info {
-  @apply gap-3 md:gap-5 lg:gap-10 flex flex-col md:flex-row lg:flex-col w-full;
+  @apply flex w-full flex-col gap-3 md:flex-row md:gap-5 lg:flex-col lg:gap-10;
 }
 
 .contact_info li {
-  @apply bg-[var(--purple-quaternary)] border border-[var(--gray-secondary)] p-5 w-full;
+  @apply w-full border border-[var(--gray-secondary)] bg-[var(--purple-quaternary)] p-5;
 }
 
 .contact_info li h3 {
-  @apply text-base lg:text-xl mb-5;
+  @apply mb-5 text-base lg:text-xl;
 }
 
 .contact_info li > div {
-  @apply flex items-center gap-2 lg:gap-5 text-[var(--gray-primary)];
+  @apply flex items-center gap-2 text-[var(--gray-primary)] lg:gap-5;
 }
 
 .contact_info li > div > div {
   color: var(--orange-primary);
-  @apply bg-white w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center rounded-full;
+  @apply flex h-16 w-16 items-center justify-center rounded-full bg-white lg:h-20 lg:w-20;
   flex-shrink: 0;
 }
 
@@ -335,11 +336,11 @@ input:-webkit-autofill:active {
 }
 
 .testimonials .button_navigation {
-  @apply bg-[#24206a] flex sm:flex-col justify-center items-center gap-5;
+  @apply flex items-center justify-center gap-5 bg-[#24206a] sm:flex-col;
 }
 
 .button_navigation button {
-  @apply text-white sm:w-16 sm:h-16 flex items-center justify-center rounded-full border border-white hover:border-[#5261e7] transition;
+  @apply flex items-center justify-center rounded-full border border-white text-white transition hover:border-[#5261e7] sm:h-16 sm:w-16;
 }
 
 /* style react toastify */

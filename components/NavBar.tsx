@@ -53,7 +53,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`flex justify-between items-center py-5 lg:py-10 universal_x z-50 ${
+      className={`z-50 py-5 lg:py-10 ${
         visible === undefined
           ? "nav_transparent"
           : (visible || menuOpen) && "nav_visible"
@@ -67,86 +67,91 @@ const NavBar = () => {
         position: visible != undefined ? "fixed" : "absolute",
       }}
     >
-      <a>
-        <img
-          src="./logo.png"
-          alt="logo"
-          className="w-32 md:w-40 xl:w-48 cursor-pointer select-none"
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-            if (menuOpen) setMenuOpen(false);
-          }}
-        />
-      </a>
-
-      <ul className="font-medium hidden md:flex gap-5 lg:gap-8 xl:gap-8">
-        <li>
-          <a href="" onClick={(e) => scrollToSection(e, "about")}>
-            About
-          </a>
-        </li>
-        <li>
-          <a href="" onClick={(e) => scrollToSection(e, "projects")}>
-            Projects
-          </a>
-        </li>
-        <li>
-          <a href="" onClick={(e) => scrollToSection(e, "testimonial")}>
-            Testimonial
-          </a>
-        </li>
-        <li>
-          <a href="" onClick={(e) => scrollToSection(e, "contact")}>
-            Contact
-          </a>
-        </li>
-      </ul>
-
-      <div className="hidden md:block">
-        <Button
-          className="main_btn"
-          onClick={(e) => scrollToSection(e, "contact")}
-        >
-          Let's Talk
-        </Button>
-      </div>
-
-      <div className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <MenuOpenOutlinedIcon /> : <MenuOutlinedIcon />}
-      </div>
-
-      <aside
-        className={`fixed top-[4.3rem] left-0 w-full h-screen z-40 overflow-hidden md:hidden ${
-          menuOpen && "show"
-        }`}
+      <div
+        className="universal_x flex items-center
+justify-between"
       >
-        <ul className="py-12 font-medium flex flex-col justify-center items-center gap-8">
+        <a>
+          <img
+            src="./logo.png"
+            alt="logo"
+            className="w-32 cursor-pointer select-none md:w-40 xl:w-48"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              if (menuOpen) setMenuOpen(false);
+            }}
+          />
+        </a>
+
+        <ul className="hidden gap-5 font-medium md:flex lg:gap-8 xl:gap-8">
           <li>
-            <a href="" onClick={(e) => closeNav(e, "about")}>
+            <a href="" onClick={(e) => scrollToSection(e, "about")}>
               About
             </a>
           </li>
           <li>
-            <a href="" onClick={(e) => closeNav(e, "projects")}>
+            <a href="" onClick={(e) => scrollToSection(e, "projects")}>
               Projects
             </a>
           </li>
           <li>
-            <a href="" onClick={(e) => closeNav(e, "testimonial")}>
+            <a href="" onClick={(e) => scrollToSection(e, "testimonial")}>
               Testimonial
             </a>
           </li>
           <li>
-            <a href="" onClick={(e) => closeNav(e, "contact")}>
+            <a href="" onClick={(e) => scrollToSection(e, "contact")}>
               Contact
             </a>
           </li>
         </ul>
 
-        <div className=" flex justify-center mt-12">
-          <Socials />
+        <div className="hidden md:block">
+          <Button
+            className="main_btn"
+            onClick={(e) => scrollToSection(e, "contact")}
+          >
+            Let's Talk
+          </Button>
         </div>
-      </aside>
+
+        <div className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <MenuOpenOutlinedIcon /> : <MenuOutlinedIcon />}
+        </div>
+
+        <aside
+          className={`fixed top-[4.3rem] left-0 z-40 h-screen w-full overflow-hidden md:hidden ${
+            menuOpen && "show"
+          }`}
+        >
+          <ul className="flex flex-col items-center justify-center gap-8 py-12 font-medium">
+            <li>
+              <a href="" onClick={(e) => closeNav(e, "about")}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="" onClick={(e) => closeNav(e, "projects")}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="" onClick={(e) => closeNav(e, "testimonial")}>
+                Testimonial
+              </a>
+            </li>
+            <li>
+              <a href="" onClick={(e) => closeNav(e, "contact")}>
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <div className=" mt-12 flex justify-center">
+            <Socials />
+          </div>
+        </aside>
+      </div>
     </nav>
   );
 };

@@ -86,151 +86,154 @@ const Contact = () => {
   }
 
   return (
-    <section className="universal_x universal_y second_bg" id="contact">
-      <h2 className="text-center title">Let's talk</h2>
-
-      <div className="md:mt-20 grid lg:grid-cols-2 gap-10">
-        <ul className="contact_info lg:order-2">
-          <li data-aos="fade-left">
-            <h3>{db!.address}</h3>
-            <div>
+    <section className="universal_y second_bg" id="contact">
+      <div className="universal_x">
+        {" "}
+        <h2 className="title text-center">Let's talk</h2>
+        <div className="grid gap-10 md:mt-20 lg:grid-cols-2">
+          <ul className="contact_info lg:order-2">
+            <li data-aos="fade-left">
+              <h3>{db!.address}</h3>
               <div>
-                <LanguageOutlinedIcon fontSize="large" />
+                <div>
+                  <LanguageOutlinedIcon fontSize="large" />
+                </div>
+
+                <p>Official Address</p>
               </div>
+            </li>
 
-              <p>Official Address</p>
-            </div>
-          </li>
+            <li data-aos="fade-left">
+              <h3>
+                <a href={`mailto:${db!.email}`}>{db!.email}</a>
+              </h3>
+              <div>
+                <div>
+                  <EmailOutlinedIcon fontSize="large" />
+                </div>
 
-          <li data-aos="fade-left">
-            <h3>
-              <a href={`mailto:${db!.email}`}>
-              {db!.email}
-              </a>
+                <p>Official email</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-left">
+              <h3 className="group whitespace-nowrap hover:underline">
+                <a href={`tel:${db!.phone}`}>
+                  {formatPhoneNumber(db!.phone)}
+                  <span className="hidden group-hover:inline-block">
+                    <PhoneEnabledOutlinedIcon
+                      fontSize="small"
+                      className="ml-1"
+                    />
+                  </span>
+                </a>
+              </h3>
+              <div>
+                <div>
+                  <HeadsetMicOutlinedIcon fontSize="large" />
+                </div>
+
+                <p>Official Phone</p>
+              </div>
+            </li>
+          </ul>
+
+          <form
+            className="border border-[var(--gray-secondary)] bg-[var(--purple-quaternary)] px-5 py-8 md:px-10 md:py-16"
+            data-aos="fade-right"
+            onSubmit={handleSubmit}
+            ref={formRef}
+          >
+            <h3 className="mb-16 text-center text-3xl font-medium capitalize">
+              Get in touch
             </h3>
-            <div>
-              <div>
-                <EmailOutlinedIcon fontSize="large" />
-              </div>
 
-              <p>Official email</p>
+            <div className="grid grid-cols-2 gap-x-5 gap-y-10">
+              <input
+                type="text"
+                name="firstName"
+                id="name"
+                placeholder="First name"
+                className="col-span-2 md:col-span-1"
+                required
+              />
+
+              <input
+                type="text"
+                name="lastName"
+                id="name"
+                placeholder="Last name"
+                className="col-span-2 md:col-span-1"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                className="col-span-2"
+                placeholder="email address"
+                required
+              />
+
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                className="col-span-2"
+                placeholder="subject"
+                required
+              />
+
+              <textarea
+                name="message"
+                id="message"
+                className="col-span-2"
+                cols={30}
+                rows={5}
+                placeholder="Your message"
+                required
+              ></textarea>
             </div>
-          </li>
 
-          <li data-aos="fade-left">
-            <h3 className="group whitespace-nowrap hover:underline">
-              <a href={`tel:${db!.phone}`}>
-                {formatPhoneNumber(db!.phone)}
-                <span className="hidden group-hover:inline-block">
-                  <PhoneEnabledOutlinedIcon fontSize="small" className="ml-1" />
-                </span>
-              </a>
-            </h3>
-            <div>
-              <div>
-                <HeadsetMicOutlinedIcon fontSize="large" />
-              </div>
+            <center className="mt-10">
+              <Button
+                className="main_btn !w-56 gap-2"
+                type="submit"
+                disabled={loadState.loading || loadState.completed}
+              >
+                {/* loader */}
+                {loadState.loading && (
+                  <span className="h-5 w-5 animate-spin rounded-full border-[3px] border-[var(--gray-primary)] border-t-[var(--orange-primary)]"></span>
+                )}
 
-              <p>Official Phone</p>
-            </div>
-          </li>
-        </ul>
+                {/* success */}
+                {loadState.success && (
+                  <span className="text-green-400">
+                    <CheckCircleOutlinedIcon />
+                  </span>
+                )}
 
-        <form
-          className="bg-[var(--purple-quaternary)] border border-[var(--gray-secondary)] px-5 md:px-10 py-8 md:py-16"
-          data-aos="fade-right"
-          onSubmit={handleSubmit}
-          ref={formRef}
-        >
-          <h3 className="text-3xl font-medium capitalize mb-16 text-center">
-            Get in touch
-          </h3>
+                {/* error */}
+                {loadState.error && (
+                  <span className="text-red-400">
+                    <ErrorOutlineOutlinedIcon />
+                  </span>
+                )}
 
-          <div className="grid grid-cols-2 gap-x-5 gap-y-10">
-            <input
-              type="text"
-              name="firstName"
-              id="name"
-              placeholder="First name"
-              className="col-span-2 md:col-span-1"
-              required
-            />
-
-            <input
-              type="text"
-              name="lastName"
-              id="name"
-              placeholder="Last name"
-              className="col-span-2 md:col-span-1"
-              required
-            />
-
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className="col-span-2"
-              placeholder="email address"
-              required
-            />
-
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              className="col-span-2"
-              placeholder="subject"
-              required
-            />
-
-            <textarea
-              name="message"
-              id="message"
-              className="col-span-2"
-              cols={30}
-              rows={5}
-              placeholder="Your message"
-              required
-            ></textarea>
-          </div>
-
-          <center className="mt-10">
-            <Button
-              className="main_btn !w-56 gap-2"
-              type="submit"
-              disabled={loadState.loading || loadState.completed}
-            >
-              {/* loader */}
-              {loadState.loading && (
-                <span className="animate-spin border-[3px] border-[var(--gray-primary)] w-5 h-5 border-t-[var(--orange-primary)] rounded-full"></span>
-              )}
-
-              {/* success */}
-              {loadState.success && (
-                <span className="text-green-400">
-                  <CheckCircleOutlinedIcon />
-                </span>
-              )}
-
-              {/* error */}
-              {loadState.error && (
-                <span className="text-red-400">
-                  <ErrorOutlineOutlinedIcon />
-                </span>
-              )}
-
-              <div>
-                {loadState.loading
-                  ? "Sending..."
-                  : loadState.success
-                  ? "Sent"
-                  : loadState.error
-                  ? "Error"
-                  : "Send Message"}
-              </div>
-            </Button>
-          </center>
-        </form>
+                <div>
+                  {loadState.loading
+                    ? "Sending..."
+                    : loadState.success
+                    ? "Sent"
+                    : loadState.error
+                    ? "Error"
+                    : "Send Message"}
+                </div>
+              </Button>
+            </center>
+          </form>
+        </div>
       </div>
 
       <ToastContainer
