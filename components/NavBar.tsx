@@ -67,10 +67,7 @@ const NavBar = () => {
         position: visible != undefined ? "fixed" : "absolute",
       }}
     >
-      <div
-        className="universal_x flex items-center
-justify-between"
-      >
+      <div className="universal_x flex items-center justify-between">
         <a>
           <img
             src="./logo.png"
