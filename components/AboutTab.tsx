@@ -1,16 +1,18 @@
 import React from "react";
 import db from "../db";
+import Image from "next/image";
+import AboutImage from "../public/coder.png";
 
 const AboutInfo = () => {
   return (
     <div
-      className="about_tab flex flex-col gap-5 md:grid items-center pt-10"
+      className="about_tab flex flex-col items-center gap-5 pt-10 md:grid"
       data-aos="zoom-out"
     >
-      <img src="./coder.png" alt="coder" />
+      <Image src={AboutImage} alt="coder" />
 
-      <div className="font-light space-y-3">
-        <h2 className="text-3xl font-medium mb-5">Hello there!</h2>
+      <div className="space-y-3 font-light">
+        <h2 className="mb-5 text-3xl font-medium">Hello there!</h2>
 
         {db.about.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>

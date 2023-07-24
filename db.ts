@@ -66,7 +66,7 @@ const db: DB = {
       {
         title: "gizmo",
         description: "friendly discord bot",
-        image: "./gizmo.jpg",
+        image: "/gizmo.jpg",
         link: "https://github.com/sudodeo/gizmo",
         btnMessage: "Request demo",
       },
@@ -75,7 +75,7 @@ const db: DB = {
       {
         title: "storeX",
         description: "Robust e-commerce Api",
-        image: "./storeX.jpg",
+        image: "/storeX.jpg",
         link: "https://github.com/sudodeo/storeX",
         btnMessage: "View on Github",
       },
@@ -83,7 +83,7 @@ const db: DB = {
         title: "TechTimes",
         description:
           "A scraper that gets trending tech content from different news sites and serves them via an API",
-        image: "./technews.jpg",
+        image: "/technews.jpg",
         link: "https://github.com/sudodeo/TechTimes",
         btnMessage: "View on Github",
       },

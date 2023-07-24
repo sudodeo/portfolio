@@ -2,15 +2,17 @@ import React from "react";
 import Socials from "./Socials";
 import db from "../db";
 import styles from "../styles/Animations.module.css";
+import Image from "next/image";
+import Deolu from "../public/deo.png";
 
 const Header = () => {
   return (
-    <header className="universal_x pt-44 relative flex ">
-      <div className="pt-12 md:pt-24 pb-48 self-center flex-1">
-        <h1 className="text-5xl sm:text-7xl xl:text-8xl font-bold lg:whitespace-nowrap">
+    <header className="universal_x relative flex pt-44 ">
+      <div className="flex-1 self-center pt-12 pb-48 md:pt-24">
+        <h1 className="text-5xl font-bold sm:text-7xl lg:whitespace-nowrap xl:text-8xl">
           I'm <span className="name">Deolu</span> {/* <br /> Adesola */}
         </h1>
-        <h3 className="mt-3 mb-10 text-base md:text-lg lg:text-xl font-mono">
+        <h3 className="mt-3 mb-10 font-mono text-base md:text-lg lg:text-xl">
           {"{ Backend Developer }"}
         </h3>
 
@@ -19,19 +21,19 @@ const Header = () => {
       </div>
 
       {/* circle */}
-      <div className="bg-[#56559e] circle"></div>
+      <div className="circle bg-[#56559e]"></div>
 
-      <img
-        src="./deo.png"
+      <Image
+        src={Deolu}
         alt="Adeoluwa"
         className={`portrait flex-1 ${styles.portrait}`}
-        loading="eager"
+        priority
       />
 
       {/* experience box */}
-      <div className="experience p-3 right-3">
-        <div className="border-[3px] border-dashed p-3 flex gap-2">
-          <span className="font-bold text-5xl">{db?.yearsOfExperience}</span>{" "}
+      <div className="experience right-3 p-3">
+        <div className="flex gap-2 border-[3px] border-dashed p-3">
+          <span className="text-5xl font-bold">{db?.yearsOfExperience}</span>{" "}
           <span>Years of Experience</span>
         </div>
       </div>

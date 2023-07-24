@@ -4,6 +4,7 @@ import scrollToSection from "./scrollToSection";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MenuOpenOutlinedIcon from "@mui/icons-material/MenuOpenOutlined";
 import Socials from "./Socials";
+import Image from "next/image";
 
 const NavBar = () => {
   // show and hide navbar on scroll up and scroll down respectively
@@ -69,9 +70,11 @@ const NavBar = () => {
     >
       <div className="universal_x flex items-center justify-between">
         <a>
-          <img
-            src="./logo.png"
+          <Image
+            src="/logo.png"
             alt="logo"
+            width={200}
+            height={200}
             className="w-32 cursor-pointer select-none md:w-40 xl:w-48"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
