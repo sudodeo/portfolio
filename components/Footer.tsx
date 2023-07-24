@@ -1,15 +1,18 @@
 import React from "react";
 import scrollToSection from "./scrollToSection";
 import Socials from "./Socials";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <div>
       <nav className="universal_x flex flex-col items-center justify-between gap-x-10 gap-y-5 py-10 md:flex-row">
         <a>
-          <img
-            src="./logo.png"
+          <Image
+            src="/logo.png"
             alt="logo"
+            width={200}
+            height={200}
             className="w-32 cursor-pointer select-none md:w-40 xl:w-48"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           />

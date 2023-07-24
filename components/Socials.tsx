@@ -9,7 +9,7 @@ const Socials = () => {
         <img
           src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png"
           alt="instagram"
-          className="w-5 md:w-7 h-5 md:h-7"
+          className="h-5 w-5 md:h-7 md:w-7"
         />
       </a>
 
@@ -18,7 +18,7 @@ const Socials = () => {
         <img
           src="https://cdn-icons-png.flaticon.com/128/733/733579.png"
           alt="instagram"
-          className="w-5 md:w-7 h-5 md:h-7"
+          className="h-5 w-5 md:h-7 md:w-7"
         />
       </a>
 
@@ -27,7 +27,7 @@ const Socials = () => {
         <img
           src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"
           alt="instagram"
-          className="w-5 md:w-7 h-5 md:h-7"
+          className="h-5 w-5 md:h-7 md:w-7"
         />
       </a>
 
@@ -36,7 +36,7 @@ const Socials = () => {
         <img
           src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png"
           alt="instagram"
-          className="w-5 md:w-7 h-5 md:h-7"
+          className="h-5 w-5 md:h-7 md:w-7"
         />
       </a>
 
@@ -45,7 +45,7 @@ const Socials = () => {
         <img
           src="https://cdn-icons-png.flaticon.com/128/733/733553.png"
           alt="instagram"
-          className="w-5 md:w-7 h-5 md:h-7"
+          className="h-5 w-5 md:h-7 md:w-7"
         />
       </a>
     </div>

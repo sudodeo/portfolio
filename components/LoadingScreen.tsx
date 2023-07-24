@@ -9,6 +9,7 @@ const LoadingScreen = () => {
     >
       <div className="flex h-full w-full -translate-y-10 scale-50 items-center justify-center lg:-translate-y-5 lg:scale-100 ">
         <Image
+          priority
           width={100}
           height={100}
           src="/favicons/small-icon.png"

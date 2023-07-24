@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import LazyLoader from "./LazyLoader";
 
 interface ProjectCardProps {
   title: string;
@@ -20,14 +21,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     data-aos="fade-up"
     className="project_card relative h-72 md:h-96 lg:h-[30rem]"
   >
-    <div className="bg_color absolute top-0 left-0 h-full w-full mix-blend-hard-light"></div>
+    <div className="bg_color absolute top-0 left-0 z-10 h-full w-full mix-blend-hard-light"></div>
 
-    <Image
+    <LazyLoader
+      hash="LXI{~GoMoMxt~VNdoft7o#oet7oy"
       src={image}
       alt={image}
       width={1000}
       height={1000}
-      className="h-full w-full object-cover"
       loading="lazy"
     />
 
