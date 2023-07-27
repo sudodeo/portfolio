@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 const Projects = () => {
   return (
     <section
-      className="projects universal_x universal_y grid sm:grid-cols-2 gap-[3px]"
+      className="projects universal_x universal_y grid gap-[3px] sm:grid-cols-2"
       id="projects"
     >
       <div className="space-y-[3px]">

@@ -8,7 +8,7 @@ import PrecisionManufacturingOutlinedIcon from "@mui/icons-material/PrecisionMan
 const SkillTab = () => {
   return (
     <div
-      className={`flex items-stretch justify-center flex-wrap gap-[60px] pt-20 ${styles.skill_tab}`}
+      className={`flex flex-wrap items-stretch justify-center gap-[60px] pt-20 ${styles.skill_tab}`}
       data-aos="zoom-out"
     >
       <article className={styles.box}>

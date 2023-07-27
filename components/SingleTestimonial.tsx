@@ -13,16 +13,16 @@ const SingleTestimonial: React.FC<SingleTestimonialProps> = ({
   business,
 }) => {
   return (
-    <article className="px-8 lg:px-16 py-5 sm:py-10">
+    <article className="px-8 py-5 sm:py-10 lg:px-16">
       <FormatQuoteIcon />
 
       <div className="mt-5">
         <p data-aos="fade-left">{comment}</p>
 
-        <h4 className="mt-5 sm:mt-10 font-semibold text-[var(--orange-primary)] capitalize">
+        <h4 className="mt-5 font-semibold capitalize text-[var(--orange-primary)] sm:mt-10">
           {name}
         </h4>
-        <small className="text-[var(--gray-primary)] tracking-wider capitalize">
+        <small className="capitalize tracking-wider text-[var(--gray-primary)]">
           {business}
         </small>
       </div>
