@@ -45,7 +45,7 @@ const Footer = () => {
       </nav>
 
       <center className="second_bg py-5">
-        <small>&copy; 2023. All rights reserved.</small>
+        <small>&copy; 2024. All rights reserved.</small>
       </center>
     </div>
   );
