@@ -4,7 +4,7 @@ import DB from "./db_struct";
 const db: DB = {
   name: "Sudodeo",
   phone: "+2347055192925", // 13 characters after +, spaces are allowed
-  email: "adesolaadeoluwa@gmail.com",
+  email: "sudodeo@gmail.com",
   address: "Lagos, Nigeria",
   about: [
     "I'm Adeoluwa Adesola, a backend developer who is on a mission to make life easier - one line of code at a time.",
@@ -30,7 +30,7 @@ const db: DB = {
     instagram: "https://www.instagram.com/_.deolu",
     twitter: "https://www.twitter.com/deolu_ad",
     linkedIn: "https://www.linkedin.com/in/adeoluwa-adesola-dev/",
-    discord: "https://discordapp.com/741308876204408854",
+    discord: "https://discord.com/users/741308876204408854",
     github: "https://www.github.com/sudodeo",
   },
   testimonials: [
@@ -56,18 +56,18 @@ const db: DB = {
   yearsOfExperience: 3,
   projects: {
     first_column: [
-      // {
-      //   title: "social media API",
-      //   description: "A basic social media API built with FastAPI",
-      //   image: "./social.jpg",
-      //   link: "https://github.com/sudodeo/Social-media-API",
-      //   btnMessage: "View on Github",
-      // },
+      {
+        title: "betterstack-go",
+        description: "Golang SDK client for betterstack.com APIs.",
+        image: "/sdk.jpeg",
+        link: "https://github.com/sudodeo/betterstack-go",
+        btnMessage: "View on Github",
+      },
       {
         title: "gizmo",
         description: "friendly discord bot",
         image: "/gizmo.jpg",
-        link: "https://github.com/sudodeo/gizmo",
+        link: "https://discord.com/users/741308876204408854",
         btnMessage: "Request demo",
       },
     ],
