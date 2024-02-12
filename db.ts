@@ -71,10 +71,10 @@ const db: DB = {
     ],
     second_column: [
       {
-        title: "storeX",
-        description: "Robust e-commerce Api",
-        image: "/storeX.jpg",
-        link: "https://github.com/sudodeo/storeX",
+        title: "SplitCrew",
+        description: "Expense splitting app",
+        image: "/expensesplit.jpg",
+        link: "https://github.com/sudodeo/splitcrew-API",
         btnMessage: "View on Github",
       },
       {
