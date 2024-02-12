@@ -17,6 +17,11 @@ type Skill = {
   description: string;
 };
 
+type Tool = {
+  name: string;
+  image: string;
+}
+
 export default interface DB {
   name: string;
   phone: string;
@@ -35,4 +40,5 @@ export default interface DB {
     first_column: Project[];
     second_column: Project[];
   };
+  stack: Tool[];
 }
