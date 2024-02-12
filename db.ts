@@ -87,6 +87,80 @@ const db: DB = {
       },
     ],
   },
+  stack: [
+    {
+      name: "Golang",
+      image: "/tools/go.svg",
+    },
+    {
+      name: "Python",
+      image: "/tools/python.svg",
+    },
+    {
+      name: "Javascript",
+      image: "/tools/javascript.svg",
+    },
+    {
+      name: "Typescript",
+      image: "/tools/typescript.svg",
+    },
+    {
+      name: "Node.js",
+      image: "/tools/nodejs.svg",
+    },
+    {
+      name: "Express.js",
+      image: "/tools/express.svg",
+    },
+    {
+      name: "PostgreSQL",
+      image: "/tools/postgresql.svg",
+    },
+    {
+      name: "Mongodb",
+      image: "/tools/mongodb.svg",
+    },
+    {
+      name: "Linux",
+      image: "/tools/linux.svg",
+    },
+    {
+      name: "Docker",
+      image: "/tools/docker.svg",
+    },
+    {
+      name: "Selenium",
+      image: "/tools/selenium.svg",
+    },
+    {
+      name: "Playwright",
+      image: "/tools/playwright.svg",
+    },
+    {
+      name: "Postman",
+      image: "/tools/postman.svg",
+    },
+    {
+      name: "Swagger",
+      image: "/tools/swagger.svg",
+    },
+    {
+      name: "Git",
+      image: "/tools/git.svg",
+    },
+    {
+      name: "Github",
+      image: "/tools/github.svg",
+    },
+    {
+      name: "VSCode",
+      image: "/tools/vscode.svg",
+    },
+    {
+      name: "Ubuntu",
+      image: "/tools/ubuntu.svg",
+    },
+  ],
 };
 
 export default db;
