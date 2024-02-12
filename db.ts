@@ -27,8 +27,6 @@ const db: DB = {
     },
   ],
   socials: {
-    instagram: "https://www.instagram.com/_.deolu",
-    twitter: "https://www.twitter.com/deolu_ad",
     linkedIn: "https://www.linkedin.com/in/adeoluwa-adesola-dev/",
     discord: "https://discord.com/users/741308876204408854",
     github: "https://www.github.com/sudodeo",

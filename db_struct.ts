@@ -25,8 +25,6 @@ export default interface DB {
   about: string[];
   skills: Skill[];
   socials: {
-    instagram: string;
-    twitter: string;
     linkedIn: string;
     discord: string;
     github: string;
