@@ -13,7 +13,7 @@ const Header = () => {
           I'm <span className="name">Deolu</span> {/* <br /> Adesola */}
         </h1>
         <h3 className="mt-3 mb-10 font-mono text-base md:text-lg lg:text-xl">
-          {"{ Backend Developer }"}
+          {"{ Software Engineer }"}
         </h3>
 
         {/* socials */}
