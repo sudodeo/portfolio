@@ -88,6 +88,7 @@ const db: DB = {
     ],
   },
   stack: [
+    // images gotten from https://github.com/devicons/devicon/tree/master/icons
     {
       name: "Golang",
       image: "/tools/go.svg",
@@ -160,6 +161,10 @@ const db: DB = {
       name: "Ubuntu",
       image: "/tools/ubuntu.svg",
     },
+    {
+      name: "Mitmproxy",
+      image: "/tools/mitmproxy.svg",
+    }
   ],
 };
 
