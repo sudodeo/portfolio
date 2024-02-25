@@ -39,7 +39,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="backend, typescript, python, javascript, developer, back-end developer, sudodeo, programmer, adeoluwa adesola, deolu, web scraping"
+          content="backend, typescript, python, javascript, golang, go, developer, back-end developer, sudodeo, programmer, adeoluwa adesola, deolu, web scraping, server-side, api, backend developer, reverse engineer, software engineer"
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
