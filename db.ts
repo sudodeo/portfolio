@@ -18,12 +18,12 @@ const db: DB = {
         "I build robust APIs that are scalable and easy to maintain.",
     },
     {
-      title: "web automation",
-      description: "I build bots that automate repetitive tasks on the web.",
+      title: "web scraping/automation",
+      description: "I build bots that scrape data and automate repetitive tasks on websites.",
     },
     {
-      title: "web scraping",
-      description: "I build bots that scrape data from websites.",
+      title: "reverse engineering",
+      description: "I reverse engineer APIs to build custom solutions.",
     },
   ],
   socials: {
