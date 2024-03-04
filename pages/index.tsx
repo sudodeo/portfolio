@@ -60,6 +60,7 @@ export default function Home() {
         <meta name="application-name" content="Sudodeo" />
         <meta name="apple-mobile-web-app-title" content="Sudodeo" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="google-site-verification" content="CLtOKfHzLLt_s1uzrTc3pAht6p_pyVyTHE14a2InQEk" />
 
         {/* open graph */}
         {/* Facebook Meta Tags  */}
