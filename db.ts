@@ -19,7 +19,8 @@ const db: DB = {
     },
     {
       title: "web scraping/automation",
-      description: "I build bots that scrape data and automate repetitive tasks on websites.",
+      description:
+        "I build bots that scrape data and automate repetitive tasks on websites.",
     },
     {
       title: "reverse engineering",
@@ -164,7 +165,11 @@ const db: DB = {
     {
       name: "Mitmproxy",
       image: "/tools/mitmproxy.svg",
-    }
+    },
+    {
+      name: "Redis",
+      image: "/tools/redis.svg",
+    },
   ],
 };
 
