@@ -7,8 +7,8 @@ import Deolu from "../public/deo.png";
 
 const Header = () => {
   return (
-    <header className="universal_x relative flex pt-44 ">
-      <div className="flex-1 self-center pt-12 pb-48 md:pt-24">
+    <header className="universal_x relative flex items-center justify-center pt-44 ">
+      <div className="pt-12 pb-48 md:pt-24">
         <h1 className="text-5xl font-bold sm:text-7xl lg:whitespace-nowrap xl:text-8xl">
           I'm <span className="name">Deolu</span> {/* <br /> Adesola */}
         </h1>
@@ -23,12 +23,12 @@ const Header = () => {
       {/* circle */}
       <div className="circle bg-[#56559e]"></div>
 
-      <Image
+      {/* <Image
         src={Deolu}
         alt="Adeoluwa"
         className={`portrait flex-1 ${styles.portrait}`}
         priority
-      />
+      /> */}
 
       {/* experience box */}
       <div className="experience right-3 p-3">

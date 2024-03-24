@@ -20,7 +20,7 @@ type Skill = {
 type Tool = {
   name: string;
   image: string;
-}
+};
 
 export default interface DB {
   name: string;

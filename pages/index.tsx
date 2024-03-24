@@ -51,7 +51,7 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#0c0b47" />
         <meta
           name="msapplication-TileImage"
-          content="https://sudodeo.dev/preview_sq.png"
+          content="https://sudodeo.vercel.app/preview_sq.png"
         />
         <meta
           name="msapplication-config"
@@ -60,23 +60,32 @@ export default function Home() {
         <meta name="application-name" content="Sudodeo" />
         <meta name="apple-mobile-web-app-title" content="Sudodeo" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="google-site-verification" content="CLtOKfHzLLt_s1uzrTc3pAht6p_pyVyTHE14a2InQEk" />
+        <meta
+          name="google-site-verification"
+          content="CLtOKfHzLLt_s1uzrTc3pAht6p_pyVyTHE14a2InQEk"
+        />
 
         {/* open graph */}
         {/* Facebook Meta Tags  */}
-        <meta property="og:url" content="https://www.sudodeo.dev/" />
+        <meta property="og:url" content="https://www.sudodeo.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Adeoluwa Adesola - Backend Developer"
         />
         <meta property="og:description" content="Backend Developer Portfolio" />
-        <meta property="og:image" content="https://sudodeo.dev/OG_card.png" />
+        <meta
+          property="og:image"
+          content="https://sudodeo.vercel.app/OG_card.png"
+        />
 
         {/* Twitter Meta Tags  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="sudodeo.dev" />
-        <meta property="twitter:url" content="https://www.sudodeo.dev/" />
+        <meta property="twitter:domain" content="sudodeo.vercel.app" />
+        <meta
+          property="twitter:url"
+          content="https://www.sudodeo.vercel.app/"
+        />
         <meta
           name="twitter:title"
           content="Adeoluwa Adesola - Backend Developer"
@@ -85,7 +94,10 @@ export default function Home() {
           name="twitter:description"
           content="Backend Developer Portfolio"
         />
-        <meta name="twitter:image" content="https://sudodeo.dev/OG_card.png" />
+        <meta
+          name="twitter:image"
+          content="https://sudodeo.vercel.app/OG_card.png"
+        />
 
         {/* Favicon */}
         <link rel="icon" href="favicons/sudo-favicon.ico" />

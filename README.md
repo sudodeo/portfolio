@@ -18,7 +18,7 @@ Features
 
 # How to Use
 
-To view the site, simply go to [sudodeo.dev](https://sudodeo.dev). To run the site locally, clone the repository to your computer and run the following command in the project directory.
+To view the site, simply go to [sudodeo.vercel.app](https://sudodeo.vercel.app). To run the site locally, clone the repository to your computer and run the following command in the project directory.
 
 ```bash
 npm run dev
