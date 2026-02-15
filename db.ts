@@ -1,5 +1,14 @@
 import DB from "./db_struct";
 
+// Calculate years of experience from September 2022
+const calculateYearsOfExperience = (): number => {
+  const startDate = new Date(2022, 8, 1); // September 2022 (month is 0-indexed)
+  const currentDate = new Date();
+  const diffInMs = currentDate.getTime() - startDate.getTime();
+  const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
+  return Math.floor(diffInYears);
+};
+
 //👋 Hi Dee, make changes to the db here
 const db: DB = {
   name: "Sudodeo",
@@ -52,7 +61,7 @@ const db: DB = {
     //   business: "footballer",
     // },
   ],
-  yearsOfExperience: 3,
+  yearsOfExperience: calculateYearsOfExperience(),
   projects: {
     first_column: [
       {
