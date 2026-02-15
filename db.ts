@@ -4,9 +4,16 @@ import DB from "./db_struct";
 const calculateYearsOfExperience = (): number => {
   const startDate = new Date(2022, 8, 1); // September 2022 (month is 0-indexed)
   const currentDate = new Date();
-  const diffInMs = currentDate.getTime() - startDate.getTime();
-  const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
-  return Math.floor(diffInYears);
+  
+  let years = currentDate.getFullYear() - startDate.getFullYear();
+  const monthDiff = currentDate.getMonth() - startDate.getMonth();
+  
+  // If current month is before September, or same month but earlier day, subtract 1 year
+  if (monthDiff < 0 || (monthDiff === 0 && currentDate.getDate() < startDate.getDate())) {
+    years--;
+  }
+  
+  return years;
 };
 
 //👋 Hi Dee, make changes to the db here
